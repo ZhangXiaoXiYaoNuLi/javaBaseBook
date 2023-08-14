@@ -17,6 +17,8 @@ import img24 from '@/assets/images/img24.png'
 
 import img25 from '@/assets/images/img25.png'
 
+import img26 from '@/assets/images/img26.png'
+
 // 两个关于String的练习题
 const Module11 = (props) => {
 
@@ -46,6 +48,20 @@ const Module11 = (props) => {
         <ImagesGroup
             srcArr={[img25]}
         ></ImagesGroup>
+
+        <ParagraphWrapper>
+            接着再看下一个实例：
+        </ParagraphWrapper>
+        <ParagraphWrapper>如果想在控制台输出两个 * 号，中间夹一个 tab 间距,该怎么输出</ParagraphWrapper>
+        <ImagesGroup
+            srcArr={[img26]}
+        ></ImagesGroup>
+        <ParagraphWrapper>
+            1、可以看出，转义符号可以作为一个 char 类型字符，而字符串是由多个 char 连接而成的，所以字符串当然也可以是单个“转义符”，比如“\t”了。
+        </ParagraphWrapper>
+        <ParagraphWrapper>
+            2、可以看到第二种，第四种写法输入是错的，是因为先相加的两个都是 char 类型，相加自动转为 int 相加，然后再和字符串拼接的。
+        </ParagraphWrapper>
     </div>
 }
 
