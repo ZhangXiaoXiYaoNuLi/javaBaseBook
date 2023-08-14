@@ -1,2 +1,3 @@
-# javaBaseBooks
-java基础学习笔记-umi前端版
+# README
+
+`@umijs/max` 模板项目，更多功能参考 [Umi Max 简介](https://umijs.org/docs/max/introduce)
