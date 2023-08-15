@@ -13,7 +13,6 @@ import Module04 from "./Modules/Module04";
 import Module05 from "./Modules/Module05";
 import Module06 from "./Modules/Module06";
 import Module07 from "./Modules/Module07";
-import Module08 from "./Modules/Module08";
 
 const Book03 = (props) => {
 
@@ -45,10 +44,6 @@ const Book03 = (props) => {
         {
             title: '运算符的优先级',
             component: <Module07></Module07>,
-        },
-        {
-            title: '运算符的优先级',
-            component: <Module08></Module08>,
         },
     ];
 

@@ -25,6 +25,9 @@ import img37 from '@/assets/images/img37.png'
 import img38 from '@/assets/images/img38.png'
 import img39 from '@/assets/images/img39.png'
 import img40 from '@/assets/images/img40.png'
+import img41 from '@/assets/images/img41.png'
+import img42 from '@/assets/images/img42.png'
+import img43 from '@/assets/images/img43.png'
 
 const Module = (props) => {
 
@@ -141,6 +144,18 @@ const Module = (props) => {
             <ParagraphWrapper>上面的输出结果是“-128”，我们知道 byte 的范围是 -128 到 127，然后当我们加上 1（byte类型的1）了之后，值就变成了 -128。</ParagraphWrapper>
             <ParagraphWrapper>因为 127 的 二进制是 01111111，加了byte 类型的 1 之后，就变成了 10000000，也就是 -128。</ParagraphWrapper>
             <ParagraphWrapper>这里也是类似的，也就验证了上面说的，++ 和 -- 不会改变原先数据的类型，所以 ++、--，就是按照原数据类型来加一（原先数据类型的 1）。</ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img41]}
+            ></ImagesGroup>
+            <ParagraphWrapper>这里是几道练习题。下面是运行结果</ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img42]}
+            ></ImagesGroup>
+            <ParagraphWrapper>第二道练习题：</ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img43]}
+            ></ImagesGroup>
+            <ParagraphWrapper>这道题挺简单的，其实就是除100，除10，然后取模。</ParagraphWrapper>
         </div>
     </>)
 }
