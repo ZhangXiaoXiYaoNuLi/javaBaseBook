@@ -34,6 +34,11 @@ const Module = (props) => {
                     然后表格的第一列，是代表在同一行中几个运算符的优先级，是从左往右，还是从右往左降级。
                 </RedFontWrapper>
             </ParagraphWrapper>
+            <ParagraphWrapper>
+                <RedFontWrapper>
+                    然后这个表格其实也不用刻意去记住，实战中只要知道“想先计算的，就用小括号包裹起来就行了”。
+                </RedFontWrapper>
+            </ParagraphWrapper>
         </div>
     </>)
 }

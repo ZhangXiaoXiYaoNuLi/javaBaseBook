@@ -63,6 +63,17 @@ export default defineConfig({
         },
       ]
     },
+    {
+      name: '3、面向对象',
+      path: '/base_object',
+      routes: [
+        {
+          name: '1',
+          path: '/base_object/book1',
+          component: './Book_03_ObjectBase/children/Book01',
+        }
+      ]
+    },
   ],
   npmClient: 'yarn',
 });
