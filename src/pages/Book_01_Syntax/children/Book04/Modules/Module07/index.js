@@ -11,7 +11,11 @@ import CardWrapper from '@/components/CardWrapper'
 // 小标题
 import SmallTitle from '@/components/SmallTitle'
 // 红字wrapper
-import RedFontWrapper from '@/components/RedFontWrapper'
+import Red from '@/components/RedFontWrapper'
+
+import img69 from '@/assets/images/img69.png'
+
+import img70 from '@/assets/images/img70.png'
 
 const Module = (props) => {
 
@@ -19,7 +23,21 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
-            
+            <ParagraphWrapper>
+                关于 do while 循环：
+            </ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img69]}
+            ></ImagesGroup>
+            <ParagraphWrapper>
+                do while 最大的特点就是：<Red>至少会执行一次（第一次执行无视条件的嘛）</Red>
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                顺便提一嘴循环嵌套：
+            </ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img70]}
+            ></ImagesGroup>
         </div>
     </>)
 }

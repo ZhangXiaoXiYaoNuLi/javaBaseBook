@@ -51,10 +51,10 @@ const Book04 = (props) => {
             title: 'break 和 continue 的使用',
             component: <Module08></Module08>,
         },
-        {
-            title: '例题',
-            component: <Module09></Module09>,
-        },
+        // {
+        //     title: '例题',
+        //     component: <Module09></Module09>,
+        // },
     ];
 
     let items = turnItems(baseItems)

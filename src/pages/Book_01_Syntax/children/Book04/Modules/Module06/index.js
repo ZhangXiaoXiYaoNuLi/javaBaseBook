@@ -13,13 +13,20 @@ import SmallTitle from '@/components/SmallTitle'
 // 红字wrapper
 import RedFontWrapper from '@/components/RedFontWrapper'
 
+import img68 from '@/assets/images/img68.png'
+
 const Module = (props) => {
 
     return (<>
         <div
             className={styles.base_wrapper}
         >
-            
+            <ParagraphWrapper>
+                关于 while 循环：
+            </ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img68]}
+            ></ImagesGroup>
         </div>
     </>)
 }

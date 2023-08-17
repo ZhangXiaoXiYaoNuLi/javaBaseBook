@@ -31,10 +31,10 @@ const Module = (props) => {
             <ImagesGroup
                 srcArr={[img64]}
             ></ImagesGroup>
+            <SmallTitle>
+                switch语句有关规则:
+            </SmallTitle>
             <div style={{color: 'red'}}>
-                <SmallTitle>
-                    switch语句有关规则:
-                </SmallTitle>
                 <ParagraphWrapper>
                     1、switch（表达式）中表达式的值必须是下述几种类型之一：byte，short，char，int，枚举 (jdk 5.0)，String (jdk 7.0)；
                 </ParagraphWrapper>
