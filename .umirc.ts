@@ -52,14 +52,24 @@ export default defineConfig({
       path: '/base_array',
       routes: [
         {
-          name: '1、排序算法',
-          path: '/base_array/test01',
-          component: './Book_02_ArrayBase/children/Test01',
+          name: '数组基础',
+          path: '/base_array/book01',
+          component: './Book_02_ArrayBase/children/Book01',
         },
         {
-          name: '2、数据结构',
-          path: '/base_array/test02',
-          component: './Book_02_ArrayBase/children/Test02',
+          name: '常见算法',
+          path: '/base_array/book02',
+          component: './Book_02_ArrayBase/children/Book02',
+        },
+        {
+          name: '数组工具类的使用',
+          path: '/base_array/book03',
+          component: './Book_02_ArrayBase/children/Book03',
+        },
+        {
+          name: '数组中的常见异常',
+          path: '/base_array/book04',
+          component: './Book_02_ArrayBase/children/Book04',
         },
       ]
     },
