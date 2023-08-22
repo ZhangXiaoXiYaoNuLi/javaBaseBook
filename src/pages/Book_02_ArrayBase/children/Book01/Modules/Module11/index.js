@@ -14,6 +14,7 @@ import SmallTitle from '@/components/SmallTitle'
 // import RedFontWrapper from '@/components/RedFontWrapper'
 import Red from '@/components/RedFontWrapper'
 
+import img89 from '@/assets/images/img89.png'
 
 const Module = (props) => {
 
@@ -21,7 +22,15 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
-
+            <ImagesGroup
+                srcArr={[img89]}
+            ></ImagesGroup>
+            <ParagraphWrapper>
+                如图所示，比较简单。
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                首先在一维中，和之前讲的是一样的，只是一维数组中存的，是指向第二维的数组的内存地址。
+            </ParagraphWrapper>
         </div>
     </>)
 }

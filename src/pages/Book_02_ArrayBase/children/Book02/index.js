@@ -9,6 +9,7 @@ import {turnItems} from '@/utils/utils.js'
 import Module01 from "./Modules/Module01";
 import Module02 from "./Modules/Module02";
 import Module03 from "./Modules/Module03";
+import SmallTitle from "@/components/SmallTitle";
 
 const Book02 = () => {
 
@@ -33,9 +34,13 @@ const Book02 = () => {
         <PageWrapper
             title={'常见算法'}
         >
-            <CollapseWrapper
+            {/* <CollapseWrapper
                 items={items}
-            ></CollapseWrapper>
+            ></CollapseWrapper> */}
+
+            <SmallTitle>
+                暂时 略~
+            </SmallTitle>
         </PageWrapper>
     </>)
 }

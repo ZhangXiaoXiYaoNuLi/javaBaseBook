@@ -14,6 +14,7 @@ import SmallTitle from '@/components/SmallTitle'
 // import RedFontWrapper from '@/components/RedFontWrapper'
 import Red from '@/components/RedFontWrapper'
 
+import img87 from '@/assets/images/img87.png'
 
 const Module = (props) => {
 
@@ -21,7 +22,15 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
-
+            <ParagraphWrapper>
+                还是比较简单好理解的，不赘述了。
+            </ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img87]}
+            ></ImagesGroup>
+            <ParagraphWrapper>
+                像你想访问一个二维数组的元素，它位于一维的第二个，二维的第三个，那么就<Red>{`arr[2][3]`}</Red>来访问。
+            </ParagraphWrapper>
         </div>
     </>)
 }

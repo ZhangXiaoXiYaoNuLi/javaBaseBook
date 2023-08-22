@@ -20,7 +20,6 @@ import Module09 from "./Modules/Module09";
 
 import Module10 from "./Modules/Module10";
 import Module11 from "./Modules/Module11";
-import Module12 from "./Modules/Module12";
 
 const Book01 = () => {
 
@@ -62,16 +61,12 @@ const Book01 = () => {
             component: <Module09></Module09>,
         },
         {
-            title: '二维数组的长度和遍历',
+            title: '二维数组的初始化值',
             component: <Module10></Module10>,
         },
         {
-            title: '二维数组元素默认初始值',
-            component: <Module11></Module11>,
-        },
-        {
             title: '二维数组的内存解析',
-            component: <Module12></Module12>,
+            component: <Module11></Module11>,
         },
     ];
 

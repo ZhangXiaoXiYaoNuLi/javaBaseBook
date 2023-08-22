@@ -37,10 +37,6 @@ const Module = (props) => {
             <ParagraphWrapper>
                 要注意的是 <Red>char 类型的初始化值 0 ，这个 0 即不是整数的 0, 也不是字符类型的 0，而是阿斯克码的 0,代表的是 '/0',也就是字符串的结束符号 。（像阿斯克码的 65，代表这大写的 A）</Red>
             </ParagraphWrapper>
-
-            <ParagraphWrapper>
-                
-            </ParagraphWrapper>
         </div>
     </>)
 }
