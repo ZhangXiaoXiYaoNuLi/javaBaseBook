@@ -29,7 +29,6 @@ const Module = (props) => {
                     对这些数据进行统一管理。
                 </ParagraphWrapper>
             </ParagraphWrapper>
-
             <ParagraphWrapper>
                 1、数组本身是<Red>引用数据类型</Red>，而数组中的<Red>元素可以是任何数据类型</Red>，包括基本数据类型和引用数据类型。
             </ParagraphWrapper>
