@@ -14,6 +14,7 @@ import SmallTitle from '@/components/SmallTitle'
 // import RedFontWrapper from '@/components/RedFontWrapper'
 import Red from '@/components/RedFontWrapper'
 
+import img76 from '@/assets/images/img76.png'
 
 const Module = (props) => {
 
@@ -58,6 +59,18 @@ const Module = (props) => {
             </div>
             <ParagraphWrapper>
                 总结下错误写法，其实就是“<Red>元素个数 或者 静态的赋值 必须 二选一，不能全有，或者全没有</Red>”。
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
+
+            <ParagraphWrapper>
+                关于动态和静态初始化： 
+            </ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img76]}
+            ></ImagesGroup>
+            <ParagraphWrapper>
+                上面这张图中，有多种定义数组的方法，其实我们只要记住前面那俩种就行，这个图中的定义方法看了，反而容易搞混。
             </ParagraphWrapper>
         </div>
     </>)
