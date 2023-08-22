@@ -35,6 +35,10 @@ import img95 from '@/assets/images/img95.png'
 import img96 from '@/assets/images/img96.png'
 import img97 from '@/assets/images/img97.png'
 
+import img98 from '@/assets/images/img98.png'
+
+import img99 from '@/assets/images/img99.png'
+
 const Book03 = () => {
 
     const baseItems = [
@@ -116,6 +120,25 @@ const Book03 = () => {
                 ></ImagesGroup>
                 <ParagraphWrapper>
                     从第二张图可以看的出来，sort方法常用的，可以对各种数值类型进行排序，底层是使用快排的原理。
+                </ParagraphWrapper>
+
+                <SmallTitle>
+                    binarySearch：
+                </SmallTitle>
+                <ImagesGroup
+                    srcArr={[img98]}
+                ></ImagesGroup>
+                <ParagraphWrapper>
+                    作为参数的数组必须有序。可以看出我们找出了元素 "22222" 的索引值。
+                </ParagraphWrapper>
+                <ParagraphWrapper>
+                    下面做个实验，如果用不是有序的数组的结果：
+                </ParagraphWrapper>
+                <ImagesGroup
+                    srcArr={[img99]}
+                ></ImagesGroup>
+                <ParagraphWrapper>
+                    发现结果居然是 -2 。
                 </ParagraphWrapper>
             </Card>
         </PageWrapper>
