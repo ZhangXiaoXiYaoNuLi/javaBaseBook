@@ -23,6 +23,7 @@ const ImagesGroup = (props) => {
                                 >
                                     <ImageWrapper
                                         src={item}
+                                        {...props}
                                     ></ImageWrapper>
                                 </div>
                             );
