@@ -78,49 +78,39 @@ export default defineConfig({
       path: '/base_object',
       routes: [
         {
-          name: '面向过程与面向对象',
+          name: 'Section-1',
           path: '/base_object/book1',
           component: './Book_03_ObjectBase/children/Book01',
         },
         {
-          name: '基本元素：类和对象',
+          name: 'Section-2',
           path: '/base_object/book2',
           component: './Book_03_ObjectBase/children/Book02',
         },
         {
-          name: '对象的创建和使用',
+          name: 'Section-3',
           path: '/base_object/book3',
           component: './Book_03_ObjectBase/children/Book03',
         },
         {
-          name: '类的成员之一：属性',
+          name: 'Section-4',
           path: '/base_object/book4',
           component: './Book_03_ObjectBase/children/Book04',
         },
         {
-          name: '类的成员之二：方法',
+          name: 'Section-5',
           path: '/base_object/book5',
           component: './Book_03_ObjectBase/children/Book05',
         },
         {
-          name: '封装与隐藏',
+          name: 'Section-6',
           path: '/base_object/book6',
           component: './Book_03_ObjectBase/children/Book06',
         },
         {
-          name: '类的成员之三：构造器',
+          name: 'Section-7',
           path: '/base_object/book7',
           component: './Book_03_ObjectBase/children/Book07',
-        },
-        {
-          name: '关键字：this',
-          path: '/base_object/book8',
-          component: './Book_03_ObjectBase/children/Book08',
-        },
-        {
-          name: '关键字：package、import',
-          path: '/base_object/book9',
-          component: './Book_03_ObjectBase/children/Book09',
         },
       ]
     },
