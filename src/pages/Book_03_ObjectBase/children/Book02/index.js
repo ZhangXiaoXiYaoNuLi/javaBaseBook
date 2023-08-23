@@ -7,13 +7,23 @@ import CollapseWrapper from '@/components/CollapseWrapper'
 import {turnItems} from '@/utils/utils.js'
 
 import Module01 from "./Modules/Module01";
+import Module02 from "./Modules/Module02";
+import Module03 from "./Modules/Module03";
 
-const Book04 = () => {
+const Book02 = () => {
 
     const baseItems = [
         {
-            title: '两个常见数组异常',
+            title: 'Module01',
             component: <Module01></Module01>,
+        },
+        {
+            title: 'Module02',
+            component: <Module02></Module02>,
+        },
+        {
+            title: 'Module03',
+            component: <Module03></Module03>,
         },
     ];
 
@@ -21,7 +31,7 @@ const Book04 = () => {
 
     return (<>
         <PageWrapper
-            title={'数组中的常见异常'}
+            title={'流程控制'}
         >
             <CollapseWrapper
                 items={items}
@@ -30,4 +40,4 @@ const Book04 = () => {
     </>)
 }
 
-export default Book04
+export default Book02

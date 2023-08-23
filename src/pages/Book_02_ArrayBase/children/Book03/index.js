@@ -102,6 +102,12 @@ const Book03 = () => {
                     可以发现，输出的是一个按一定规则拼接的字符串类型。甚至贴心地在左右两边拼上了数组的中括号。元素间的逗号和空格，都是toSting方法拼上去的。
                 </ParagraphWrapper>
 
+                <ParagraphWrapper>
+                    <Red>
+                        很多时候 toString 方法，在各种类中是会被重写的。用于更具体的输出。
+                    </Red>
+                </ParagraphWrapper>
+
                 <SmallTitle>
                     fill：
                 </SmallTitle>
@@ -139,6 +145,9 @@ const Book03 = () => {
                 ></ImagesGroup>
                 <ParagraphWrapper>
                     发现结果居然是 -2 。
+                </ParagraphWrapper>
+                <ParagraphWrapper>
+                    所以<Red>使用 binarySearch 方法的前提是数组是有序排序的。</Red>
                 </ParagraphWrapper>
             </Card>
         </PageWrapper>
