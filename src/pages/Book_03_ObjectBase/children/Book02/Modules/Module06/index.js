@@ -21,7 +21,9 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
-
+            <ParagraphWrapper>
+                
+            </ParagraphWrapper>
         </div>
     </>)
 }

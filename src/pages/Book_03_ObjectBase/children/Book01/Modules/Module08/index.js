@@ -17,6 +17,7 @@ import Blue from '@/components/BlueFontWrapper'
 
 import Dot from '@/components/Dot'
 
+import img110 from '@/assets/images/img110.png'
 
 const Module = (props) => {
 
@@ -37,7 +38,16 @@ const Module = (props) => {
                 <Dot></Dot>定义方法时，方法的结果应该返回给调用者，交由调用者处理。
             </ParagraphWrapper>
             <ParagraphWrapper>
-                <Dot color="red"></Dot>方法中只能调用方法或属性，<Red>不可以在方法内部定义方法</Red>。
+                <Dot color="red"></Dot>方法中只能调用方法或属性，<Red>不可以在方法内部定义方法</Red>,<Blue>然后我傻傻地在 main 方法里面写方法demo..</Blue>。
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                <Dot></Dot><Blue>如果方法定义了返回值，那么<Red>必须</Red>返回，不能是“有条件的”返回。如下图</Blue>。
+            </ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img110]}
+            ></ImagesGroup>
+            <ParagraphWrapper>
+                <Blue>这里必须加个 else 返回才行，就是说<Red>必须</Red>保证返回</Blue>。
             </ParagraphWrapper>
         </div>
     </>)
