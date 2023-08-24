@@ -14,7 +14,6 @@ import Module05 from "./Modules/Module05";
 import Module06 from "./Modules/Module06";
 import Module07 from "./Modules/Module07";
 import Module08 from "./Modules/Module08";
-import Module09 from "./Modules/Module09";
 
 const Book01 = () => {
 
@@ -48,12 +47,8 @@ const Book01 = () => {
             component: <Module07></Module07>,
         },
         {
-            title: 'return 关键字',
-            component: <Module08></Module08>,
-        },
-        {
             title: '方法使用中的注意点',
-            component: <Module09></Module09>,
+            component: <Module08></Module08>,
         },
     ];
 
