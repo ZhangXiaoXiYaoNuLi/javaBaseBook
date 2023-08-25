@@ -69,6 +69,10 @@ const Module = (props) => {
             <ImagesGroup
                 srcArr={[img143]}
             ></ImagesGroup>
+
+            <ParagraphWrapper>
+                上面的代码示例，只是封装性的“一部分”的表现，并不是封装性的全部。
+            </ParagraphWrapper>
         </div>
     </>)
 }
