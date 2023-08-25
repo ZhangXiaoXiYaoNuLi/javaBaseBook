@@ -13,12 +13,7 @@ import SmallTitle from '@/components/SmallTitle'
 // 红字wrapper
 // import RedFontWrapper from '@/components/RedFontWrapper'
 import Red from '@/components/RedFontWrapper'
-import Blue from '@/components/BlueFontWrapper'
-import ComLine from '@/components/ComLine'
 
-import Dot from '@/components/Dot'
-
-import img140 from '@/assets/images/img140.png'
 
 const Module = (props) => {
 
@@ -26,12 +21,7 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
-            <ParagraphWrapper>
-                递归方法 js 中已经用了挺熟了，就不细讲咯。
-            </ParagraphWrapper>
-            <ImagesGroup
-                srcArr={[img140]}
-            ></ImagesGroup>
+
         </div>
     </>)
 }

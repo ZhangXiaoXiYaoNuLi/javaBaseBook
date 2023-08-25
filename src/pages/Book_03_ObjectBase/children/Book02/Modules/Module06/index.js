@@ -14,6 +14,7 @@ import SmallTitle from '@/components/SmallTitle'
 // import RedFontWrapper from '@/components/RedFontWrapper'
 import Red from '@/components/RedFontWrapper'
 import Blue from '@/components/BlueFontWrapper'
+import ComLine from '@/components/ComLine'
 
 import Dot from '@/components/Dot'
 
@@ -23,6 +24,15 @@ import img128 from '@/assets/images/img128.png'
 import img129 from '@/assets/images/img129.png'
 import img130 from '@/assets/images/img130.png'
 import img131 from '@/assets/images/img131.png'
+import img132 from '@/assets/images/img132.png'
+import img133 from '@/assets/images/img133.png'
+import img134 from '@/assets/images/img134.png'
+import img135 from '@/assets/images/img135.png'
+import img136 from '@/assets/images/img136.png'
+import img137 from '@/assets/images/img137.png'
+import img138 from '@/assets/images/img138.png'
+import img139 from '@/assets/images/img139.png'
+
 
 const Module = (props) => {
 
@@ -115,6 +125,86 @@ const Module = (props) => {
             <ParagraphWrapper>
                 <Blue>可以发现，实例对象中的值，在方法执行后，发生了改变</Blue>。
             </ParagraphWrapper>
+            <ParagraphWrapper>如果在方法中重写 new 一个对象，赋值给传进来的“引用类型”参数，那么就会打破原先的指针指向：</ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img132]}
+            ></ImagesGroup>
+
+            <ComLine></ComLine>
+
+            <ParagraphWrapper>
+                来个例题：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img133]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                这里定义一个数字交换的方法。
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                然后我们在main方法中调用，尝试调换两个变量的值。
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img134]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                上面这个例题的内存解析：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img135]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                可以看出，基础数据类型的实参传给形参，进行的是“值复制”的传递。也就是说 swap 方法中的 a 和 b ，并不是 main 方法中的 a 和 b 。只是一开始值一样而已。
+            </ParagraphWrapper>
+
+            <ComLine></ComLine>
+
+            <ParagraphWrapper>
+                再来个例题：
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                先定义一个 DataSwap 类。
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img136]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后定义一个 Swap 类，注册一个静态方法 swap。
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img137]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后我们在main方法中，创建DataSwap实例，传入swap方法中。
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img138]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                <Blue>然后注意了，如果把 main 方法中的传参方式，改为以下这种：</Blue>
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img139]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                <Blue>得到的结果，还是类似于“基础类型传参”的，并不会改变数值。所以注意了，<Red>是基础类型传参还是引用类型传参，要看“实参传给形参”的瞬间，参数的类型</Red>，而不是看传入的值是单独存在的值，还是对象的值。</Blue>
+            </ParagraphWrapper>
+
         </div>
     </>)
 }
