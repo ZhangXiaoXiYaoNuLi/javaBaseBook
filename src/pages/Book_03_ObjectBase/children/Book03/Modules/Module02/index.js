@@ -31,6 +31,7 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
+            {/* 好尼玛困啊 */}
             <ParagraphWrapper>
                 <SmallTitle>
                     关于 java 中的四个权限：
@@ -40,7 +41,7 @@ const Module = (props) => {
                 srcArr={[img144]}
             ></ImagesGroup>
             <ParagraphWrapper>
-                <Dot></Dot><Blue>修饰符用于修饰类和类的成员（属性和方法），但是对于类和类的成员，能用的修饰符是不一样的</Blue>。
+                <Dot></Dot><Blue><Red>修饰符用于修饰类和类的成员</Red>（属性和方法），但是对于类和类的成员，能用的修饰符是不一样的</Blue>。
             </ParagraphWrapper>
             <ParagraphWrapper>
                 <Blue>
@@ -131,6 +132,15 @@ const Module = (props) => {
 
             <ParagraphWrapper>
                 可以看到在访问属性的时候，报错提示我们属性已经被 private 修饰了。
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
+            <ComSpace></ComSpace>
+
+            <ParagraphWrapper>
+                <Red>
+                    其实以后多写代码，写着写着，不想记住都忘不了。特别是在开发中常用的 private 和 public 。
+                </Red>
             </ParagraphWrapper>
         </div>
     </>)

@@ -8,7 +8,7 @@ const ComLine = (props) => {
             style={{
                 height: '2px',
                 padding: '0px 30px',
-                margin: '12px 0px',
+                margin: '32px 0px',
                 backgroundColor: '#f1f2f4',
             }}
         ></div>
