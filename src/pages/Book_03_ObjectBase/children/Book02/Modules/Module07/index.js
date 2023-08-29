@@ -27,7 +27,7 @@ const Module = (props) => {
             className={styles.base_wrapper}
         >
             <ParagraphWrapper>
-                递归方法 js 中已经用了挺熟了，就不细讲咯。
+                递归方法 js 中已经用挺熟了，就不细讲咯。
             </ParagraphWrapper>
             <ImagesGroup
                 srcArr={[img140]}
