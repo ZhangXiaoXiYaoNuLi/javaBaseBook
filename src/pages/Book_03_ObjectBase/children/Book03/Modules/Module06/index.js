@@ -87,25 +87,44 @@ const Module = (props) => {
                 关于 this 调用构造器：
             </SmallTitle>
 
+            <ComSpace></ComSpace>
+
             <ParagraphWrapper>
                 1、<Blue>{`可以在类的构造器中使用"this(形参列表)"的方式，调用本类中重载的其他的构造器！`}</Blue>。
             </ParagraphWrapper>
 
+            <ComSpace></ComSpace>
+
             <ParagraphWrapper>
                 2、<Blue>明确：构造器中<Red>不能</Red>{`通过"this(形参列表)"的方式调用`}<Red>自身构造器</Red></Blue>。
             </ParagraphWrapper>
+            
+            <ParagraphWrapper>这个很好理解，因为直接就造成了无限循环的递归。</ParagraphWrapper>
+
+            <ComSpace></ComSpace>
 
             <ParagraphWrapper>
-                3、{`如果一个类中声明了n个构造器，则最多有 n - 1 个构造器中使用了"this(形参列表)"`}。
+                3、<Blue>{`如果一个类中声明了n个构造器，则最多有 n - 1 个构造器中使用了"this(形参列表)"`}</Blue>。
             </ParagraphWrapper>
+            <ParagraphWrapper>
+                这条规则的原因也是因为<Red>this调用构造器的一系列“链式调用”，是不能出现循环的</Red>。不能说 1 调 2 ，2 调 3 ，3 调 4，然后又 4 调 2。由此，最多只能有 n - 1 个{`"this(形参列表)"`}。
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
 
             <ParagraphWrapper>
                 4、<Blue>{`"this(形参列表)"`}</Blue><Red>{`必须声明在类的构造器的首行！`}</Red>。
             </ParagraphWrapper>
+            <ParagraphWrapper>
+                当然，如果你尝试把{`"this(形参列表)"`}往后移动，直接就会编译错误了。所以犯不了这个错。<Blue>也可以记住，this调用构造器，是<Red>“单链式调用”</Red>，不能分叉</Blue>。
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
 
             <ParagraphWrapper>
                 5、<Blue>在类的<Red>一个构造器</Red>中，<Red>{`最多只能声明一个`}</Red>{`"this(形参列表)"`}</Blue>。
             </ParagraphWrapper>
+            <ParagraphWrapper>和上面的类似，记住是因为“单链式调用”就是了。</ParagraphWrapper>
         </div>
     </>)
 }
