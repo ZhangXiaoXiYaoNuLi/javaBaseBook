@@ -22,6 +22,8 @@ import img165 from '@/assets/images/img165.png'
 import img166 from '@/assets/images/img166.png'
 import img167 from '@/assets/images/img167.png'
 import img168 from '@/assets/images/img168.png'
+import img169 from '@/assets/images/img169.png'
+import img170 from '@/assets/images/img170.png'
 
 const Module = (props) => {
 
@@ -109,13 +111,31 @@ const Module = (props) => {
                 7、<Red>{`如果已经导入java.a包下的类。那么如果需要使用a包的子包下的类的话，仍然需要导入`}</Red>。
             </ParagraphWrapper>
             <ParagraphWrapper>
-                <Blue>所以说，导包要导到存放类、接口的那一层包才行。</Blue>
+                <Blue>所以说，要用哪个类、接口,就要导包导到存放哪个类、接口的那一层包才行。</Blue>
             </ParagraphWrapper>
+            <ParagraphWrapper>
+                <Blue>也就是说，如果使用“ xxx.* ”的方式，可以导入 xxx 包下的全部类和接口，但是如果类和接口在 xxx 的子包下，<Red>仍需进行导包</Red></Blue>。
+            </ParagraphWrapper>
+            <ParagraphWrapper>（<Red> * 可不代表子包 </Red>）</ParagraphWrapper>
 
             <ComSpace></ComSpace>
 
             <ParagraphWrapper>
                 8、<Red>{`import static组合的使用：调用指定类或接口下的静态的属性或方法 `}</Red>。如下图：
+            </ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img169]}
+            ></ImagesGroup>
+            <ParagraphWrapper>
+                类似的，还可以这样导入 Math 类：
+            </ParagraphWrapper>
+            <ImagesGroup
+                srcArr={[img170]}
+            ></ImagesGroup>
+            <ParagraphWrapper>
+                <Red>
+                    这里我们要注意到，import static 导入的 “落脚点”，并不是 类 或者 接口，而是 类的静态结构。
+                </Red>
             </ParagraphWrapper>
         </div>
     </>)
