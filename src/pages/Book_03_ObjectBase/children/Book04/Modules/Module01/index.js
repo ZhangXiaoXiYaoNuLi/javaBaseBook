@@ -103,6 +103,12 @@ const Module = (props) => {
             <ParagraphWrapper>
                 2、一个父类可以派生出多个子类。（但是一个父亲，可以有多个儿子）
             </ParagraphWrapper>
+            <ParagraphWrapper>
+                3、子类与父类之间，是相对的，同一个类可以同时是父类，又可以是子类。上一层的是“直接父类”，更上的是“间接父类”。
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                4、子类继承父类之后，实际就拥有了直接父类和间接父类全部的属性和方法。只是不一定可以调用（private修饰的父类方法）。
+            </ParagraphWrapper>
             <ParagraphWrapper>当然如果想要通过继承扩展功能，后面还会讲到 接口 interface。</ParagraphWrapper>
 
             
