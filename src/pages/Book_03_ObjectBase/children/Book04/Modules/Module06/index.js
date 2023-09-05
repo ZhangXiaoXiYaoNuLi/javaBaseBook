@@ -15,6 +15,7 @@ import {
 } from '@/components/index.js'
 
 import img198 from '@/assets/images/img198.png'
+import img199 from '@/assets/images/img199.png'
 
 const Module = (props) => {
 
@@ -22,24 +23,6 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
-            {/* 
-                一个变量只能有一种确定的数据类型
-                一个引用类型变量可能指向(引用)多种不同类型的对象
-                Person p = new Student();
-                Object o = new Person();//Object类型的变量o，指向Person类型的对象
-                o = new Student(); //Object类型的变量o，指向Student类型的对象
-                子类可看做是特殊的父类，所以父类类型的引用可以指向子类的对象：向
-                上转型(upcasting)。
-                 一个引用类型变量如果声明为父类的类型，但实际引用的是子类
-                对象，那么该变量就不能再访问子类中添加的属性和方法
-                Student m = new Student();
-                m.school = “pku”; //合法,Student类有school成员变量
-                Person e = new Student(); 
-                e.school = “pku”; //非法,Person类没有school成员变量
-                属性是在编译时确定的，编译时e为Person类型，没有school成员变量，因而编
-                译错误。
-            */}
-
             <ParagraphWrapper>
                 <Dot></Dot>多态性，是面向对象中最重要的概念，在Java中的体现：
             </ParagraphWrapper>
@@ -86,6 +69,18 @@ const Module = (props) => {
             </ParagraphWrapper>
 
             <ComSpace></ComSpace>
+
+            <ParagraphWrapper>
+                <Dot></Dot><Blue>一个引用类型变量如果声明为父类的类型，但实际引用的是子类对象，那么该变量就<Red>不能</Red>再访问子类中添加的属性和方法（只能实际调用子类中重写的方法）</Blue>。
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img199]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                <Red>属性是在编译时确定的，编译时e为Person类型，没有school成员变量，因而编译错误。</Red>
+            </ParagraphWrapper>
         </div>
     </>)
 }
