@@ -12,6 +12,7 @@ import {
     Blue,
     ComLine,
     Dot,
+    Green,
 } from '@/components/index.js'
 
 import img198 from '@/assets/images/img198.png'
@@ -65,7 +66,7 @@ const Module = (props) => {
             <ComSpace></ComSpace>
 
             <ParagraphWrapper>
-                <span style={{color: '#52c41a', fontWeight: 'bold'}}>这里挺好理解的，比如说我们定义了一个“长方形” a ，那么显然“正方形”是特殊的长方形，是符合长方形的定义的，把它赋值给 a 当然可以，而且就在此时 a 不止有长方形的属性，还可以调用特殊的正方形的重写的（长方形）的方法，比如“求面积”，可以直接用一个边长的平方获得，而不用原来的长乘宽</span>。
+                <Green>这里挺好理解的，比如说我们定义了一个“长方形” a ，那么显然“正方形”是特殊的长方形，是符合长方形的定义的，把它赋值给 a 当然可以，而且就在此时 a 不止有长方形的属性，还可以调用特殊的正方形的重写的（长方形）的方法，比如“求面积”，可以直接用一个边长的平方获得，而不用原来的长乘宽</Green>。
             </ParagraphWrapper>
 
             <ComSpace></ComSpace>
@@ -81,6 +82,14 @@ const Module = (props) => {
             <ParagraphWrapper>
                 <Red>属性是在编译时确定的，编译时e为Person类型，没有school成员变量，因而编译错误。</Red>
             </ParagraphWrapper>
+
+            <ComLine></ComLine>
+
+            <ParagraphWrapper>
+                下面进行代码测试
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
         </div>
     </>)
 }

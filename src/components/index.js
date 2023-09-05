@@ -15,6 +15,8 @@ import ComLine from '@/components/ComLine'
 
 import Dot from '@/components/Dot'
 
+import Green from '@/components/GreenFontWrapper'
+
 export {
     ParagraphWrapper,
     ComSpace,
@@ -26,4 +28,5 @@ export {
     Blue,
     ComLine,
     Dot,
+    Green,
 }
