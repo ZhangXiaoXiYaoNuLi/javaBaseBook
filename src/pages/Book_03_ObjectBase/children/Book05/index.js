@@ -32,23 +32,23 @@ const Book05 = () => {
         },
         {
             title: '多态性练习',
-            component: <Module03></Module03>,
+            component: <Module04></Module04>,
         },
         {
             title: 'Object类的结构剖析',
-            component: <Module03></Module03>,
+            component: <Module05></Module05>,
         },
         {
             title: 'equal()方法与 == 运算符',
-            component: <Module03></Module03>,
+            component: <Module06></Module06>,
         },
         {
             title: 'toString()方法',
-            component: <Module03></Module03>,
+            component: <Module07></Module07>,
         },
         {
             title: '包装类相关',
-            component: <Module03></Module03>,
+            component: <Module08></Module08>,
         },
     ];
 

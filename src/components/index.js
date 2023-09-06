@@ -17,6 +17,8 @@ import Dot from '@/components/Dot'
 
 import Green from '@/components/GreenFontWrapper'
 
+import Bold from '@/components/Bold'
+
 export {
     ParagraphWrapper,
     ComSpace,
@@ -29,4 +31,5 @@ export {
     ComLine,
     Dot,
     Green,
+    Bold,
 }
