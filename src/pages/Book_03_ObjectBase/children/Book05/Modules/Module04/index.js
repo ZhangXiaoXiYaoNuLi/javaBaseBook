@@ -20,6 +20,13 @@ import img231 from '@/assets/images/img231.png'
 import img232 from '@/assets/images/img232.png'
 import img233 from '@/assets/images/img233.png'
 import img234 from '@/assets/images/img234.png'
+import img239 from '@/assets/images/img239.png'
+import img240 from '@/assets/images/img240.png'
+import img241 from '@/assets/images/img241.png'
+import img242 from '@/assets/images/img242.png'
+import img243 from '@/assets/images/img243.png'
+import img244 from '@/assets/images/img244.png'
+import img245 from '@/assets/images/img245.png'
 
 const Module = (props) => {
 
@@ -72,8 +79,64 @@ const Module = (props) => {
             </Bold>
 
             <ParagraphWrapper>
-                
+                {`定义三个类，父类GeometricObject代表几何形状，子类Circle代表圆形，MyRectangle代表矩形。定义一个测试类GeometricTest，编写equalsArea方法测试两个对象的面积是否相等（注意方法的参数类型，利用动态绑定技术），编写displayGeometricObject方法显示对象的面积（注意方法的参数类型，利用动态绑定技术）。`}
             </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img239]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                具体的类关系图如上。
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                按照类图提示，可以编写出下面这个 几何体 类：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img240]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后我们来编写 圆形 类：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img241]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后我们继续来写 集合类的另一个子类 ，矩形 类：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img242]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后我们按照题目要求，去 测试类 GeometricTest ，编写比较面积大小的方法：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img243]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后去 main 方法测试一下，（对了，Circle 类 和 MyRectangle 类的构造方法我各添加了一个哈）：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img244]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                测试类中，获取几何体面积的方法：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img245]}
+            ></ImagesGroup>
         </div>
     </>)
 }

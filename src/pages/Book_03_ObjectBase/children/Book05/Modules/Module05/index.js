@@ -1,19 +1,18 @@
 import React, {useEffect, useState, useRef} from "react";
 
 import styles from './styles.less'
-import ParagraphWrapper from '@/components/ParagraphWrapper'
-import ComSpace from '@/components/ComSpace'
-import ImagesGroup from '@/components/ImagesGroup'
-// 代码展示组件，输入值为转化后的字符串数组
-import CodeShowWrapper from '@/components/CodeShowWrapper'
-// 卡片组件
-import CardWrapper from '@/components/CardWrapper'
-// 小标题
-import SmallTitle from '@/components/SmallTitle'
-// 红字wrapper
-// import RedFontWrapper from '@/components/RedFontWrapper'
-import Red from '@/components/RedFontWrapper'
-
+import {
+    ParagraphWrapper,
+    ComSpace,
+    ImagesGroup,
+    CodeShowWrapper,
+    CardWrapper,
+    SmallTitle,
+    Red,
+    Blue,
+    ComLine,
+    Dot,
+} from '@/components/index.js'
 
 const Module = (props) => {
 
@@ -21,7 +20,28 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
+            {/* 
+                Object类是所有Java类的根父类
+                 如果在类的声明中未使用extends关键字指明其父类，则默认父类
+                为java.lang.Object类
+            */}
+            <ParagraphWrapper>
+                <Dot color="red"></Dot><Red>Object类是所有Java类的根父类。</Red>
+            </ParagraphWrapper>
 
+            <ComSpace></ComSpace>
+
+            <ParagraphWrapper>
+                <Dot color="red"></Dot><Red>如果在类的声明中未使用extends关键字指明其父类，则默认父类为java.lang.Object类。</Red>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Dot color="rgb(22, 119, 255)"></Dot><Blue>我们知道 Object 类是所有类的根父类之后，那么可以想像它里面肯定定义了一些非常非常通用的方法。</Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                
+            </ParagraphWrapper>
         </div>
     </>)
 }
