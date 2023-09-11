@@ -234,6 +234,67 @@ const Module = (props) => {
                  更直接的方式：
                 String intStr = 5 + “”
             */}
+
+            <ParagraphWrapper>
+                <Blue>
+                    1、字符串 转换成 基本数据类型
+                </Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Bold>{`int i = new Integer(“12”);`}</Bold>
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                <Blue>这一句直接利用，构造器接收字符串参数，以及 赋值的时候的“自动拆箱”。</Blue>
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
+
+            <ParagraphWrapper>
+                <Blue>
+                    2、字符串 转换成 包装类
+                </Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Bold>{`Float f = Float.parseFloat(“12.1”);`}</Bold>
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
+
+            <ParagraphWrapper>
+                <Blue>
+                    3、基本数据类型 转换成 字符串
+                </Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Bold>{`String fstr = String.valueOf(2.34f);`}</Bold>
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                <Red>更直接方便的做法是，使用连接符号加号： “ + ”。</Red>
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                <Bold>{`String intStr = 5 + “”`}</Bold>
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
+
+            <ParagraphWrapper>
+                <Blue>
+                    4、包装类 转换成 字符串
+                </Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Bold>{`String i = new Integer(10).toString()`}</Bold>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                使用 包装类对象中的 toString 方法。
+            </ParagraphWrapper>
+
+            <ComSpace></ComSpace>
             
         </div>
     </>)
