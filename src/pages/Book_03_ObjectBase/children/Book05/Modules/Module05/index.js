@@ -14,6 +14,8 @@ import {
     Dot,
 } from '@/components/index.js'
 
+import img246 from '@/assets/images/img246.png'
+
 const Module = (props) => {
 
     return (<>
@@ -40,8 +42,12 @@ const Module = (props) => {
             </ParagraphWrapper>
 
             <ParagraphWrapper>
-                
+                大致的主要方法如下
             </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img246]}
+            ></ImagesGroup>
         </div>
     </>)
 }
