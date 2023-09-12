@@ -114,6 +114,56 @@ export default defineConfig({
         },
       ]
     },
+    {
+      name: '4、异常处理',
+      path: '/error_handle/book1',
+      component: './Book_04_ErrorHandle/children/Book01',
+    },
+    {
+      name: '5、多线程',
+      path: '/thread_base/book1',
+      component: './Book_05_ThreadBase/children/Book01',
+    },
+    {
+      name: '6、常用类',
+      path: '/common_use_object/book1',
+      component: './Book_06_CommonUseObject/children/Book01',
+    },
+    {
+      name: '7、枚举类与注解',
+      path: '/enumeration_and_annotate/book1',
+      component: './Book_07_EnumerationAndAnnotate/children/Book01',
+    },
+    {
+      name: '8、集合',
+      path: '/collection/book1',
+      component: './Book_08_Collection/children/Book01',
+    },
+    {
+      name: '9、泛型与File',
+      path: '/genericity_and_file/book1',
+      component: './Book_09_GenericityAndFile/children/Book01',
+    },
+    {
+      name: 'A、IO流与网络编程',
+      path: '/io_and_web/book1',
+      component: './Book_10_IoAndWeb/children/Book01',
+    },
+    {
+      name: 'B、反射',
+      path: '/reflex/book1',
+      component: './Book_11_Reflex/children/Book01',
+    },
+    {
+      name: 'C、动态代理',
+      path: '/dynamic_proxy/book1',
+      component: './Book_12_DynamicProxy/children/Book01',
+    },
+    {
+      name: 'D、Java8新特性',
+      path: '/java_eight_new_features/book1',
+      component: './Book_13_JavaEightNewFeatures/children/Book01',
+    },
   ],
   npmClient: 'yarn',
 });

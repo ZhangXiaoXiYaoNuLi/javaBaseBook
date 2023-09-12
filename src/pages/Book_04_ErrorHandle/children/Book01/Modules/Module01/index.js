@@ -16,13 +16,14 @@ import {
     Bold,
 } from '@/components/index.js'
 
+
 const Module = (props) => {
 
     return (<>
         <div
             className={styles.base_wrapper}
         >
-            2
+
         </div>
     </>)
 }
