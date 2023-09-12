@@ -12,7 +12,6 @@ import Module03 from "./Modules/Module03";
 import Module04 from "./Modules/Module04";
 import Module05 from "./Modules/Module05";
 import Module06 from "./Modules/Module06";
-import Module07 from "./Modules/Module07";
 
 const Book06 = () => {
 
@@ -22,28 +21,24 @@ const Book06 = () => {
             component: <Module01></Module01>,
         },
         {
-            title: '自定义ArrayUtil工具类的优化',
+            title: '设计模式与单例设计模式',
             component: <Module02></Module02>,
         },
         {
-            title: '设计模式与单例设计模式',
+            title: '理解main方法的语法',
             component: <Module03></Module03>,
         },
         {
-            title: '理解main方法的语法',
+            title: '类中代码块的使用',
             component: <Module04></Module04>,
         },
         {
-            title: '类中代码块的使用',
+            title: '属性赋值的先后顺序（完结篇）',
             component: <Module05></Module05>,
         },
         {
-            title: '属性赋值的先后顺序',
-            component: <Module06></Module06>,
-        },
-        {
             title: 'final关键字',
-            component: <Module07></Module07>,
+            component: <Module06></Module06>,
         },
     ];
 
