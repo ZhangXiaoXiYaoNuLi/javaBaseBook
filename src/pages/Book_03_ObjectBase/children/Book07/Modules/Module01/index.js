@@ -16,6 +16,14 @@ import {
     Bold,
 } from '@/components/index.js'
 
+import img288 from '@/assets/images/img288.png'
+import img289 from '@/assets/images/img289.png'
+import img290 from '@/assets/images/img290.png'
+import img291 from '@/assets/images/img291.png'
+import img292 from '@/assets/images/img292.png'
+import img293 from '@/assets/images/img293.png'
+import img294 from '@/assets/images/img294.png'
+
 const Module = (props) => {
 
     return (<>
@@ -104,6 +112,10 @@ const Module = (props) => {
                 所以说 abstract 不能修饰上面这些，很好理解。
             </ParagraphWrapper>
 
+            <ParagraphWrapper>
+                <Dot color="red"></Dot><Red>即使子类已经实现了全部的抽象方法，但是如果是用 abstract 修饰的话，那就还是不能进行实例化对象。</Red>
+            </ParagraphWrapper>
+
             <ComLine></ComLine>
 
             <ParagraphWrapper>
@@ -117,6 +129,44 @@ const Module = (props) => {
 
             <ComLine></ComLine>
 
+            <ParagraphWrapper>
+                <Bold>来个 demo ：</Bold>
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img288]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                这里我们定义了一个“生物”抽象类，且在其中定义了一个抽象方法“呼吸”。（<Blue>类中有 abstract 关键字，那么类名必是 abstract 修饰的，但是类名是 abstract 修饰的，类中不一定有抽象方法</Blue>）
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img289]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后我们定义一个 Person 类去集成 “生物” 类，并没有实现“呼吸”抽象方法哈，而是新增了一些属性、方法，还包括一个新的抽象方法。
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img290]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                最后，我们用这个 Student 实现所有抽象方法。<Green>注意这里犯了一个错，虽然这里 Student 类已经实现了全部的抽象方法，但是上面代码中，还是使用了 abstract 修饰符修饰了 Student 类，所以，还是不能实例化 Student 对象的。</Green><Red>所以这里要把 abstract 修饰符去掉。</Red>
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img291]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                最后，我们实例化一个 Student 对象，调用了 breath 方法，得到的结果，是 学生类 具体实现的方法所执行的结果。
+            </ParagraphWrapper>
+
+            <ComLine></ComLine>
+
             <SmallTitle>
                 实际开发中常用的其中一种做法：
             </SmallTitle>
@@ -125,6 +175,39 @@ const Module = (props) => {
                 <Red>
                     使用抽象类的匿名子类对象。
                 </Red>
+            </ParagraphWrapper>
+            
+
+            <ParagraphWrapper>
+                直接上代码，首先我们定义一个抽象类 Student，里面有一个抽象方法 study。
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img292]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                接着，我们来到 main 方法中:
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img293]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                上面的代码中，我们使用匿名子类具体实现了 Student 抽象类的 抽象方法 study。然后进行了实例化和方法调用。
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Blue>语法格式为：<Red>{`new 抽象类() { 在这里实现抽象方法 }`}</Red></Blue>
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img294]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                调用 study 方法，可以看到控制台输出。
             </ParagraphWrapper>
 
             <ComLine></ComLine>
