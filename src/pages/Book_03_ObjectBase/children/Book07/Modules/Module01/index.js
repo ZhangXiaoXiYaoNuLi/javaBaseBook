@@ -23,6 +23,8 @@ import img291 from '@/assets/images/img291.png'
 import img292 from '@/assets/images/img292.png'
 import img293 from '@/assets/images/img293.png'
 import img294 from '@/assets/images/img294.png'
+import img295 from '@/assets/images/img295.png'
+import img296 from '@/assets/images/img296.png'
 
 const Module = (props) => {
 
@@ -209,6 +211,29 @@ const Module = (props) => {
             <ParagraphWrapper>
                 调用 study 方法，可以看到控制台输出。
             </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Red>
+                    当然了，在开发中更常用的，是把 new 匿名实现类实例 这一块，放到方法的参数中，如下
+                </Red>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                首先，我们定义一个测试类，类中有个 say 方法，参数是抽象类，方法体是调用抽象类的抽象方法：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img295]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后我们来到main方法中，使用匿名实现类的匿名实例作为参数：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img296]}
+            ></ImagesGroup>
+
 
             <ComLine></ComLine>
         </div>
