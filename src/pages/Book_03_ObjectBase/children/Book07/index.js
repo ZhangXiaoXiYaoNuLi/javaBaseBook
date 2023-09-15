@@ -13,6 +13,7 @@ import Module04 from "./Modules/Module04";
 import Module05 from "./Modules/Module05";
 import Module06 from "./Modules/Module06";
 import Module07 from "./Modules/Module07";
+import Module08 from "./Modules/Module08";
 
 const Book06 = () => {
 
@@ -22,28 +23,32 @@ const Book06 = () => {
             component: <Module01></Module01>,
         },
         {
-            title: '接口的定义与使用',
+            title: '接口（上）',
             component: <Module02></Module02>,
         },
         {
-            title: 'java8中接口的新特性',
+            title: '接口（下）',
             component: <Module03></Module03>,
         },
         {
-            title: '内部类的分类',
+            title: 'java8中接口的新特性',
             component: <Module04></Module04>,
         },
         {
-            title: '成员内部类的特点以及实例化',
+            title: '内部类的分类',
             component: <Module05></Module05>,
         },
         {
-            title: '成员内部类中调用外部类的结构',
+            title: '成员内部类的特点以及实例化',
             component: <Module06></Module06>,
         },
         {
-            title: '局部内部类的使用',
+            title: '成员内部类中调用外部类的结构',
             component: <Module07></Module07>,
+        },
+        {
+            title: '局部内部类的使用',
+            component: <Module08></Module08>,
         },
     ];
 
