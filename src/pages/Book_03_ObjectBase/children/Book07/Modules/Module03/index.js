@@ -27,6 +27,7 @@ import img315 from '@/assets/images/img315.png'
 import img316 from '@/assets/images/img316.png'
 import img317 from '@/assets/images/img317.png'
 import img318 from '@/assets/images/img318.png'
+import img319 from '@/assets/images/img319.png'
 
 const Module = (props) => {
 
@@ -176,13 +177,16 @@ const Module = (props) => {
 
             <ComLine></ComLine>
 
-            <SmallTitle>接口应用：代理模式</SmallTitle>
+            <ParagraphWrapper>
+                <Blue>
+                    抽象类 与 接口 的区别：
+                </Blue>
+            </ParagraphWrapper>
 
-            <ComLine></ComLine>
+            <ImagesGroup
+                srcArr={[img319]}
+            ></ImagesGroup>
 
-            <SmallTitle>接口应用：工厂模式</SmallTitle>
-
-            <ComLine></ComLine>
         </div>
     </>)
 }

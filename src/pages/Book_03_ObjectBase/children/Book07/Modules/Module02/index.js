@@ -125,10 +125,6 @@ const Module = (props) => {
                 <Dot></Dot><Blue>{`接口和类是并列关系，或者可以理解为一种特殊的类。从本质上讲，接口是一种特殊的抽象类，这种抽象类中只包含常量和方法的定义(JDK7.0及之前)，而没有变量和方法的实现。`}</Blue>
             </ParagraphWrapper>
 
-            {/* 
-                 
-            */}
-
             <ComLine></ComLine>
 
             <SmallTitle>
