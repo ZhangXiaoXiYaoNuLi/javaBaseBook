@@ -40,7 +40,7 @@ const Book06 = () => {
             component: <Module05></Module05>,
         },
         {
-            title: '内部类的分类',
+            title: '内部类的概述和分类',
             component: <Module06></Module06>,
         },
         {
