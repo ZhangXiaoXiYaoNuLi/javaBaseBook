@@ -15,9 +15,6 @@ import Module06 from "./Modules/Module06";
 import Module07 from "./Modules/Module07";
 import Module08 from "./Modules/Module08";
 import Module09 from "./Modules/Module09";
-import Module10 from "./Modules/Module10";
-import Module11 from "./Modules/Module11";
-import Module12 from "./Modules/Module12";
 
 const Book01 = () => {
 
@@ -51,24 +48,12 @@ const Book01 = () => {
             component: <Module07></Module07>,
         },
         {
-            title: '重写方法异常抛出的规则',
+            title: '手动抛出异常对象',
             component: <Module08></Module08>,
         },
         {
-            title: '开发中如何选择哪种方式处理异常',
-            component: <Module09></Module09>,
-        },
-        {
-            title: '手动抛出异常对象',
-            component: <Module10></Module10>,
-        },
-        {
             title: '如何自定义异常',
-            component: <Module11></Module11>,
-        },
-        {
-            title: '异常处理练习',
-            component: <Module12></Module12>,
+            component: <Module09></Module09>,
         },
     ]
 
