@@ -80,6 +80,7 @@ const Module = (props) => {
             <ParagraphWrapper>
                 <Blue>观察控制台的输出，我们发现输出并不是 先 0 到 99 结束，然后再接着下一个 0 到 99 的，而是两边的输出，一段嵌着一段的。证明两个线程在同时执行。</Blue>
             </ParagraphWrapper>
+            
         </div>
     </>)
 }
