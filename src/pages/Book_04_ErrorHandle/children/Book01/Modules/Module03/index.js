@@ -61,32 +61,8 @@ const Module = (props) => {
 
             <ComLine></ComLine>
 
-            {/* 
-                Java提供的是异常处理的抓抛模型
-                Java程序的执行过程中如出现异常，会生成一个异常类对象，
-                该异常对象将被提交给Java运行时系统，这个过程称为抛出
-                (throw)异常。
-                异常对象的生成
-                由虚拟机自动生成：程序运行过程中，虚拟机检测到程序发生了问题，如果在当
-                前代码中没有找到相应的处理程序，就会在后台自动创建一个对应异常类的实例
-                对象并抛出——自动抛出
-                由开发人员手动创建：Exception exception = new ClassCastException();——创
-                建好的异常对象不抛出对程序没有任何影响，和创建一个普通对象一样
-                7.3 异常处理机制一
-                异常的抛出机制
-                为保证程序正常执行，代码必须对可能出现的异常进行处理。
-                7.3 异常处理机制一
-                 如果一个方法内抛出异常，该异常对象会被抛给调用者方法中处
-                理。如果异常没有在调用者方法中处理，它继续被抛给这个调用
-                方法的上层方法。这个过程将一直继续下去，直到异常被处理。
-                这一过程称为捕获(catch)异常。
-                 如果一个异常回到main()方法，并且main()也不处理，则程序运
-                行终止。
-                 程序员通常只能处理Exception，而对Error无能为力。
-            */}
-
             <ParagraphWrapper>
-                <Dot></Dot>Java提供的是异常处理的<Blue>抓抛模型</Blue>。（所谓的“抓”，可以理解为 try-catch，是解决问题的。所谓的“抛”，就是 throw，向更高层级抛出异常，直到被解决）。
+                <Dot></Dot>Java提供的是异常处理的<Blue>抓抛模型</Blue>。（<Red>所谓的“抓”，可以理解为 try-catch，是解决问题的。所谓的“抛”，就是 throw，向更高层级抛出异常，直到被解决</Red>）。
             </ParagraphWrapper>
 
             <ParagraphWrapper>
@@ -113,6 +89,10 @@ const Module = (props) => {
 
             <ParagraphWrapper>
                 <Dot></Dot>如果一个异常回到 main 方法，并且 main 也不处理，则程序运行终止。
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Dot color="red"></Dot><Red>如果程序的第五行抛出了异常，则持续的第六行就不会被执行。某个代码抛出了异常，那么后续的代码不会被执行。</Red>
             </ParagraphWrapper>
 
             <ParagraphWrapper>
