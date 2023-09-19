@@ -16,7 +16,6 @@ import {
     Bold,
 } from '@/components/index.js'
 
-
 const Module = (props) => {
 
     return (<>

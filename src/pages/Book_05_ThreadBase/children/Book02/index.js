@@ -14,27 +14,27 @@ const Book01 = () => {
 
     const baseItems = [
         {
-            title: '线程概述',
+            title: '线程安全问题',
             component: <Module01></Module01>,
         },
         {
-            title: '多线程创建方式一：继承Thread类',
+            title: '处理线程安全问题',
             component: <Module02></Module02>,
         },
         {
-            title: '线程的常用方法',
+            title: '线程安全的懒汉式单例模式',
             component: <Module03></Module03>,
         },
         {
-            title: '线程优先级的设置',
+            title: '4',
             component: <Module03></Module03>,
         },
         {
-            title: '多线程创建方式二：继承Runnable类',
+            title: '5',
             component: <Module03></Module03>,
         },
         {
-            title: '线程的生命周期',
+            title: '6',
             component: <Module03></Module03>,
         },
     ]

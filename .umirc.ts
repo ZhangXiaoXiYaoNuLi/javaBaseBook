@@ -121,8 +121,19 @@ export default defineConfig({
     },
     {
       name: '5、多线程',
-      path: '/thread_base/book1',
-      component: './Book_05_ThreadBase/children/Book01',
+      path: '/thread_base',
+      routes: [
+        {
+          name: 'Section-1',
+          path: '/thread_base/book1',
+          component: './Book_05_ThreadBase/children/Book01',
+        },
+        {
+          name: 'Section-2',
+          path: '/thread_base/book2',
+          component: './Book_05_ThreadBase/children/Book02',
+        },
+      ]
     },
     {
       name: '6、常用类',
