@@ -43,7 +43,7 @@ const Book01 = () => {
 
     return (<>
         <PageWrapper
-            title={'多线程'}
+            title={'Section-2'}
         >
             <CollapseWrapper
                 items={items}
