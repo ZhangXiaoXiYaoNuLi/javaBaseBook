@@ -11,7 +11,6 @@ import Module02 from "./Modules/Module02";
 import Module03 from "./Modules/Module03";
 import Module04 from "./Modules/Module04";
 import Module05 from "./Modules/Module05";
-import Module06 from "./Modules/Module06";
 
 const Book01 = () => {
 
@@ -35,10 +34,6 @@ const Book01 = () => {
         {
             title: '多线程创建方式二：继承Runnable类',
             component: <Module05></Module05>,
-        },
-        {
-            title: '线程的生命周期',
-            component: <Module06></Module06>,
         },
     ]
 
