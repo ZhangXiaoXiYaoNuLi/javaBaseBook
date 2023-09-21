@@ -111,6 +111,13 @@ const Module = (props) => {
                 </Blue>
             </ParagraphWrapper>
 
+            <ComSpace></ComSpace>
+            <ComSpace></ComSpace>
+
+            <ParagraphWrapper>
+                当然，使用了这个“同步代码块”，解决了线程安全问题，还有有一些“缺点”的，就是运行变慢了，但是还是不得不这样做的。相当于是把多线程，转成了单线程的执行。
+            </ParagraphWrapper>
+
             <ComLine></ComLine>
 
             <ParagraphWrapper>
