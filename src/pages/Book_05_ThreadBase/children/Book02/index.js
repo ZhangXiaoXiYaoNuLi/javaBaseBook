@@ -14,6 +14,7 @@ import Module05 from "./Modules/Module05";
 import Module06 from "./Modules/Module06";
 import Module07 from "./Modules/Module07";
 import Module08 from "./Modules/Module08";
+import Module09 from "./Modules/Module09";
 
 const Book01 = () => {
 
@@ -35,20 +36,24 @@ const Book01 = () => {
             component: <Module04></Module04>,
         },
         {
-            title: '死锁问题，及解决方式',
+            title: '死锁的问题',
             component: <Module05></Module05>,
         },
         {
-            title: 'sleep() 和 await() 的异同',
+            title: 'Lock锁解决线程安全问题',
             component: <Module06></Module06>,
         },
         {
-            title: '多线程创建方式三：实现 callable 接口',
+            title: '线程的通信',
             component: <Module07></Module07>,
         },
         {
-            title: '多线程创建方式四：使用线程池',
+            title: '多线程的创建方式三：实现 callable 接口',
             component: <Module08></Module08>,
+        },
+        {
+            title: '多线程的创建方式四：使用线程池',
+            component: <Module09></Module09>,
         },
     ]
 

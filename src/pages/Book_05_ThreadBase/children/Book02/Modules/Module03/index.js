@@ -24,6 +24,14 @@ import img418 from '@/assets/images/img418.png'
 import img419 from '@/assets/images/img419.png'
 import img420 from '@/assets/images/img420.png'
 import img421 from '@/assets/images/img421.png'
+import img422 from '@/assets/images/img422.png'
+import img423 from '@/assets/images/img423.png'
+import img424 from '@/assets/images/img424.png'
+import img425 from '@/assets/images/img425.png'
+import img426 from '@/assets/images/img426.png'
+import img427 from '@/assets/images/img427.png'
+import img428 from '@/assets/images/img428.png'
+import img429 from '@/assets/images/img429.png'
 
 const Module = (props) => {
 
@@ -174,7 +182,7 @@ const Module = (props) => {
             ></ImagesGroup>
 
             <ParagraphWrapper>
-                <Blue>其实和，解决 继承 Runnable 实现多线程的线程问题很类似，只是这里的 new 出来的 线程锁，我们换成了静态的，从而保证是同一个。</Blue>
+                <Blue>其实和，解决 继承 Runnable 实现多线程的线程问题很类似，只是<Red>这里的 new 出来的 线程锁，我们换成了静态的，从而保证是同一个s</Red>。</Blue>
             </ParagraphWrapper>
 
             <ComSpace></ComSpace>
@@ -280,7 +288,91 @@ const Module = (props) => {
                 下面上代码：
             </ParagraphWrapper>
 
-            
+            <ParagraphWrapper>
+                首先，我们来还原一下代码，还原成之前存在线程安全问题的情况：
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                还是有一个窗口类，实现 Runnable 接口，静态属性为 票数，然后多线程循环输出卖票
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img422]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后是在 main 方法中，new 三个 窗口 类，进行多线程执行，可以看到控制台的输出，是有线程安全问题的
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img423]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                接下来，我们使用同步方法，解决这个问题：
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                首先，我们可以观察到，“操作共享数据”的代码块，和之前是不一样的，这里我们是把它提取了出来，独立成了一个 show 方法的
+            </ParagraphWrapper>
+            <ParagraphWrapper>
+                <Bold>之前：</Bold>
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img416]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                <Bold>现在：</Bold>
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img424]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                <Blue>
+                    其实同步方法，就是在我们抽出来（之所以要抽出来，就是为了把“操作共享数据”的部分抽成独立的方法体）的方法，加上 Synchronized 修饰符。
+                </Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                下面我们来修改一下这个 show 方法
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img425]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                <Red>这里我们使用的线程锁是“this”，因为这里是“实现Runnable”的做法，所以到时候 this 只指向同一个实例。</Red>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                然后可以观察下输出，线程问题已经解决。
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Red>
+                    但其实上面这种修改，还是使用原来的“同步代码块”，下面我们来看看“同步方法”的方式的修改：
+                </Red>
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img426]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                <Blue>
+                    这里就有个问题，既然使用“同步代码块”是有“线程锁”的，但是看上面“同步方法”的代码，却没有看到。那么同步方法有没有“锁”呢？
+                </Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Red>
+                    同步方法，也是有锁的，只是它默认给出了。那么这个 锁 是谁？其实就是 this。
+                </Red>
+            </ParagraphWrapper>
 
             {/* ======================================================================== */}
 
@@ -290,12 +382,47 @@ const Module = (props) => {
                 <Dot color="black"></Dot><Bold>同步方法处理继承 Thread 的线程安全问题</Bold>
             </ParagraphWrapper>
 
-            <ComLine></ComLine>
+            <ParagraphWrapper>
+                还是先来还原下代码，还原成之前使用“继承Thread”的方式，有线程问题的情况
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img427]}
+            ></ImagesGroup>
 
             <ParagraphWrapper>
-                <Dot color="black"></Dot><Bold>关于何为释放锁，及各种操作是否释放锁</Bold>
+                下面我们开始改造，首先我们把操作共享数据的代码区块抽取出来，放到一个方法中：
             </ParagraphWrapper>
-            <ComSpace></ComSpace>
+
+            <ImagesGroup
+                srcArr={[img428]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>然后我们在这个方法前，加上 Synchronized 修饰符，问一下，此时线程就安全了吗</ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Blue>答案是否定的，自己动脑子想想，显然这里会使用 this 作为 线程锁。而因为这是 继承 Thread 的方式，在 main 方法中，我们 new 了多个实例，this 的指向并不是同一个实例。</Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                所以此时该怎么办呢？<Red>答案就是，将这个同步方法，写成是静态的。</Red><Blue>那么同步锁就会自动使用“类.class”。</Blue>
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img429]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                <Blue>来个“同步方法”的小总结</Blue>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Dot color="red"></Dot><Red>同步方法，比起同步代码块的区别，本质其实就是“不用显式地写 线程锁”。而是使用默认的 线程锁。</Red>
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                <Dot color="red"></Dot><Red>同步方法，如果是静态的方法，那么使用的默认 线程锁，就是“类.class”。如果是非静态的方法，那么就默认使用 “this” 作为 线程锁。</Red>
+            </ParagraphWrapper>
 
         </div>
     </>)
