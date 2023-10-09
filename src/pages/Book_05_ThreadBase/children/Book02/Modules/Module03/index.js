@@ -374,6 +374,10 @@ const Module = (props) => {
                 </Red>
             </ParagraphWrapper>
 
+            <ParagraphWrapper>
+                <Red>当然，我们就得保证这个 this 是同一个实例对象，所以在不同的对象之间，这个同步方法的做法，并不能解决线程安全问题。</Red>
+            </ParagraphWrapper>
+
             {/* ======================================================================== */}
 
             <ComLine></ComLine>
