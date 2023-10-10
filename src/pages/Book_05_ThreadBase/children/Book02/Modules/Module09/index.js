@@ -16,6 +16,8 @@ import {
     Bold,
 } from '@/components/index.js'
 
+import img463 from '@/assets/images/img463.png'
+import img464 from '@/assets/images/img464.png'
 
 const Module = (props) => {
 
@@ -75,21 +77,6 @@ const Module = (props) => {
 
             <ComLine></ComLine>
 
-            {/* 
-                线程池相关API
-                 JDK 5.0起提供了线程池相关API：ExecutorService 和 Executors
-                 ExecutorService：真正的线程池接口。常见子类ThreadPoolExecutor
-                 void execute(Runnable command) ：执行任务/命令，没有返回值，一般用来执行
-                Runnable
-                 <T> Future<T> submit(Callable<T> task)：执行任务，有返回值，一般又来执行
-                Callable
-
-                 Executors.newFixedThreadPool(n); 创建一个可重用固定线程数的线程池
-                 Executors.newSingleThreadExecutor() ：创建一个只有一个线程的线程池
-                 Executors.newScheduledThreadPool(n)：创建一个线程池，它可安排在给定延迟后运
-                行命令或者定期地执行
-            */}
-
             <SmallTitle>线程池相关API</SmallTitle>
 
             <ParagraphWrapper>
@@ -140,7 +127,38 @@ const Module = (props) => {
                 下面我们来看看代码上怎么实现：
             </ParagraphWrapper>
 
-            
+            <ParagraphWrapper>
+                首先，我们要知道，线程池是用来“控制线程的执行”的，所以不包括编写实际线程运行的内容。（确实很像公共交通工具啊，送你到目的地，你要干什么不管）
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                所以，我们先创建一个实现 Runnable 接口的线程类：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img463]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后我们到 main 方法中，创建线程池，并使用线程池，“承载” 刚刚我们创建的线程类的运行：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img464]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                控制台输出，可以看出，线程已经执行，输出了100内的偶数。
+            </ParagraphWrapper>
+
+            <ComLine></ComLine>
+
+            <ParagraphWrapper>
+                <Blue>
+                    第三第四种创建线程的方法，现在不要求非常熟练，因为开发中，大多是使用第四种，而且到时都是具体问题具体分析，且会使用框架帮助实现的。所以这里暂时不用太深入
+                </Blue>
+            </ParagraphWrapper>
+
         </div>
     </>)
 }
