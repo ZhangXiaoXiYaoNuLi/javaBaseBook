@@ -137,8 +137,29 @@ export default defineConfig({
     },
     {
       name: '6、常用类',
-      path: '/common_use_object/book1',
-      component: './Book_06_CommonUseObject/children/Book01',
+      path: '/common_use_object',
+      routes: [
+        {
+          name: '字符串相关',
+          path: '/common_use_object/book1',
+          component: './Book_06_CommonUseObject/children/Book01',
+        },
+        {
+          name: '日期相关',
+          path: '/common_use_object/book2',
+          component: './Book_06_CommonUseObject/children/Book02',
+        },
+        {
+          name: '比较器',
+          path: '/common_use_object/book3',
+          component: './Book_06_CommonUseObject/children/Book03',
+        },
+        {
+          name: '其它',
+          path: '/common_use_object/book4',
+          component: './Book_06_CommonUseObject/children/Book04',
+        },
+      ]
     },
     {
       name: '7、枚举类与注解',
