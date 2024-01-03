@@ -13,7 +13,6 @@ import Module04 from "./Modules/Module04";
 import Module05 from "./Modules/Module05";
 import Module06 from "./Modules/Module06";
 import Module07 from "./Modules/Module07";
-import Module08 from "./Modules/Module08";
 
 const Book01 = () => {
 
@@ -35,20 +34,16 @@ const Book01 = () => {
             component: <Module04></Module04>,
         },
         {
-            title: '字符串的内存结构',
+            title: 'String 的常用方法',
             component: <Module05></Module05>,
         },
         {
-            title: 'String 的常用方法',
+            title: 'String 与其它类型的转换',
             component: <Module06></Module06>,
         },
         {
-            title: 'String 与其它类型的转换',
-            component: <Module07></Module07>,
-        },
-        {
             title: 'StringBuffer 和 StringBuilder',
-            component: <Module08></Module08>,
+            component: <Module07></Module07>,
         },
     ]
 

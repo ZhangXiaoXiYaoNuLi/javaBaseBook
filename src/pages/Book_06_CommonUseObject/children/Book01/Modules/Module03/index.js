@@ -20,6 +20,9 @@ import img472 from '@/assets/images/img472.png'
 import img473 from '@/assets/images/img473.png'
 import img474 from '@/assets/images/img474.png'
 import img475 from '@/assets/images/img475.png'
+import img476 from '@/assets/images/img476.png'
+import img477 from '@/assets/images/img477.png'
+import img478 from '@/assets/images/img478.png'
 
 const Module = (props) => {
 
@@ -83,6 +86,37 @@ const Module = (props) => {
 
             <ComLine></ComLine>
 
+            <ParagraphWrapper>
+                再来一个例子，首先，我们创建一个 Person 类，类中有个那个 Name 属性：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img476]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                然后我们实例化两个 name 属性相同的 Person 对象，然后使用 equals 和 == 来比较两个实例的 name 属性：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img477]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                使用 equals 比较，得出的结果是 true ，这个我们应该不感到意外，因为 String 类对 equals 方法进行了重写，只要内容一样，对比结果就是 true。
+            </ParagraphWrapper>
+
+            <ParagraphWrapper>
+                而使用 == 对比俩实例的 name 属性，结果是 true，是因为<Blue>字符串最终是存在于方法区的，且决不重复</Blue>，所以这两个“abc”的地址值，其实是一样的，而这两个实例的 name 属性存的就是这俩 “abc” 的地址值，是相同的，所以比较结果是 true。
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img478]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                上面 demo ，在内存中的示例如上图。
+            </ParagraphWrapper>
 
         </div>
     </>)

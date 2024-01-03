@@ -23,6 +23,11 @@ import img469 from '@/assets/images/img469.png'
 import img470 from '@/assets/images/img470.png'
 import img471 from '@/assets/images/img471.png'
 
+import img486 from '@/assets/images/img486.png'
+import img487 from '@/assets/images/img487.png'
+import img488 from '@/assets/images/img488.png'
+import img489 from '@/assets/images/img489.png'
+import img490 from '@/assets/images/img490.png'
 
 const Module = (props) => {
 
@@ -81,7 +86,7 @@ const Module = (props) => {
             </ParagraphWrapper>
 
             <ParagraphWrapper>
-                <Red>当对字符串重新赋值的时候，需要重新指定内存区域。不能使用原有的 {`value[]`} 进行改制。</Red>
+                <Red>当对字符串重新赋值的时候，需要重新指定内存区域。不能使用原有的 {`value[]`} 进行改值（因为是被 final 修饰的）。</Red>
             </ParagraphWrapper>
 
             <ComSpace></ComSpace>
@@ -139,6 +144,52 @@ const Module = (props) => {
             <ParagraphWrapper>
                 这里有个结论：<Red>不可变性，就是你对字符串的任何内容进行修改，都是新建动作，新造一个，原有的字符串总是保持不变</Red>。
             </ParagraphWrapper>
+
+            <ComLine></ComLine>
+
+            <ParagraphWrapper>====================</ParagraphWrapper>
+
+            <ParagraphWrapper>关于字符串不可变性的 番外篇</ParagraphWrapper>
+
+            <ParagraphWrapper>====================</ParagraphWrapper>
+
+            <ParagraphWrapper>
+                关于字符串的不可变性：
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img486]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                1、如何保证字符串不可变
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img487]}
+            ></ImagesGroup>
+
+            <ImagesGroup
+                srcArr={[img488]}
+            ></ImagesGroup>
+
+
+            <ParagraphWrapper>
+                2、对字符串的修改
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img489]}
+            ></ImagesGroup>
+
+            <ParagraphWrapper>
+                3、为什么字符串要设置不可变
+            </ParagraphWrapper>
+
+            <ImagesGroup
+                srcArr={[img490]}
+            ></ImagesGroup>
+
         </div>
     </>)
 }
