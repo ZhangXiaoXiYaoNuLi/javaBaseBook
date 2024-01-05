@@ -50,7 +50,7 @@ const Module = (props) => {
                 <Dot color="red"></Dot><Red>此方法适用于计算时间差。</Red>
             </ParagraphWrapper>
             <ParagraphWrapper>
-                {`System类提供的public static long currentTimeMillis()用来返回当前时间与1970年1月1日0时0分0秒之间以毫秒为单位的时间差`}
+                {`System类提供的public static long`} <Red>{`currentTimeMillis()`}</Red>{`用来返回当前时间与1970年1月1日0时0分0秒之间以毫秒为单位的时间差`}
             </ParagraphWrapper>
 
             <ImagesGroup
@@ -62,7 +62,7 @@ const Module = (props) => {
             </ParagraphWrapper>
             
             <ComSpace></ComSpace>
-
+            {/* 
             <ParagraphWrapper>
                 <Red>2. java.util.Date 类</Red>
             </ParagraphWrapper>
@@ -91,7 +91,6 @@ const Module = (props) => {
                 显然，这里是 Date 类是重写了 toString 方法。当然了，我们也可以主动调用它的 <Blue>toString</Blue> 方法，得到的结果是一样的。
             </ParagraphWrapper>
 
-            {/* Date(long date) */}
             <ParagraphWrapper>
                 <Bold>{`Date(long date)`}</Bold>：构造器参数是时间戳毫秒值。
             </ParagraphWrapper>
@@ -114,21 +113,6 @@ const Module = (props) => {
             <ImagesGroup
                 srcArr={[img509]}
             ></ImagesGroup>
-
-            {/* 
-                3. java.text.SimpleDateFormat类
-                     Date类的API不易于国际化，大部分被废弃了，java.text.SimpleDateFormat
-                    类是一个不与语言环境有关的方式来格式化和解析日期的具体类。
-                     它允许进行格式化：日期文本、解析：文本日期
-                     格式化：
-                     SimpleDateFormat() ：默认的模式和语言环境创建对象
-                     public SimpleDateFormat(String pattern)：该构造方法可以用参数pattern
-                    指定的格式创建一个对象，该对象调用：
-                     public String format(Date date)：方法格式化时间对象date
-                     解析：
-                     public Date parse(String source)：从给定字符串的开始解析文本，以生成
-                    一个日期。
-            */}
 
             <ParagraphWrapper>
                 <Red>3、java.text.SimpleDateFormat 类</Red>
@@ -165,27 +149,10 @@ const Module = (props) => {
                 （1）<Blue>{`public Date parse(String source)`}</Blue>：从给定字符串的开始解析文本，以生成一个日期。
             </ParagraphWrapper>
 
-            {/* 
-                4. java.util.Calendar(日历)类
-                     Calendar是一个抽象基类，主用用于完成日期字段之间相互操作的功能。
-                     获取Calendar实例的方法
-                     使用Calendar.getInstance()方法
-                     调用它的子类GregorianCalendar的构造器。
-                     一个Calendar的实例是系统时间的抽象表示，通过get(int field)方法来取得想
-                    要的时间信息。比如YEAR、MONTH、DAY_OF_WEEK、HOUR_OF_DAY 、
-                    MINUTE、SECOND
-                     public void set(int field,int value)
-                     public void add(int field,int amount)
-                     public final Date getTime()
-                     public final void setTime(Date date)
-                     注意:
-                     获取月份时：一月是0，二月是1，以此类推，12月是11
-                     获取星期时：周日是1，周二是2 ， 。。。。周六是7
-            */}
-
             <ParagraphWrapper>
                 
-            </ParagraphWrapper>
+            </ParagraphWrapper> 
+            */}
         </div>
     </>)
 }
