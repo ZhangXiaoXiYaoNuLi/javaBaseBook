@@ -33,6 +33,8 @@ const Dot = (props) => {
                             width: sizeNum,
                             height: sizeNum,
                             borderRadius: Number(sizeNum.split('px')[0]) + 'px',
+                            position: 'relative',
+                            bottom: '1px',
                         }}
                     ></div>
                 </div>
