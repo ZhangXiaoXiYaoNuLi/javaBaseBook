@@ -162,7 +162,7 @@ export default defineConfig({
       ]
     },
     {
-      name: '7、枚举',
+      name: '7、枚举和注解',
       path: '/enumeration_and_annotate/book1',
       component: './Book_07_EnumerationAndAnnotate/children/Book01',
     },
