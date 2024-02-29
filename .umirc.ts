@@ -168,8 +168,24 @@ export default defineConfig({
     },
     {
       name: '8、集合',
-      path: '/collection/book1',
-      component: './Book_08_Collection/children/Book01',
+      path: '/collection',
+      routes: [
+        {
+          name: 'Section-1',
+          path: '/collection/book1',
+          component: './Book_08_Collection/children/Book01',
+        },
+        {
+          name: 'Section-2',
+          path: '/collection/book2',
+          component: './Book_08_Collection/children/Book02',
+        },
+        {
+          name: 'Section-3',
+          path: '/collection/book3',
+          component: './Book_08_Collection/children/Book03',
+        },
+      ]
     },
     {
       name: '9、泛型与File',

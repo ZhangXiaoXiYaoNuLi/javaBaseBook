@@ -16,76 +16,57 @@ import Module07 from "./Modules/Module07";
 import Module08 from "./Modules/Module08";
 import Module09 from "./Modules/Module09";
 import Module10 from "./Modules/Module10";
-import Module11 from "./Modules/Module11";
-import Module12 from "./Modules/Module12";
-import Module13 from "./Modules/Module13";
 
-const Book01 = () => {
+const Book02 = () => {
 
     const baseItems = [
         {
-            title: '集合框架与数组的对比及概述',
+            title: 'Map 接口及其多个实现类的对比',
             component: <Module01></Module01>,
         },
         {
-            title: '集合框架涉及到的 API',
+            title: 'Map 中存储的 key-value 的特点',
             component: <Module02></Module02>,
         },
         {
-            title: 'Collection 接口中的常用方法',
+            title: 'HashMap 在 JDK7、8 中的底层实现原理',
             component: <Module03></Module03>,
         },
         {
-            title: '迭代器 Iterator',
+            title: 'HashMap 在 JDK7、8 中的源码分析',
             component: <Module04></Module04>,
         },
         {
-            title: '迭代器 Iterator',
+            title: 'LinkedHashMap 的底层实现',
             component: <Module05></Module05>,
         },
         {
-            title: '新特性 foreach 遍历',
+            title: 'Map 中的常用方法',
             component: <Module06></Module06>,
         },
         {
-            title: 'List 接口常用实现类的对比',
+            title: 'TreeMap两种添加方式的使用',
             component: <Module07></Module07>,
         },
         {
-            title: 'ArrayList 的源码分析',
+            title: 'Properties处理属性文件',
             component: <Module08></Module08>,
         },
         {
-            title: 'LinkedList 的源码分析',
+            title: 'Collections工具类常用方法的测试',
             component: <Module09></Module09>,
         },
         {
-            title: 'Vector 的源码分析',
+            title: 'java 数据结构简述',
             component: <Module10></Module10>,
         },
-        {
-            title: 'List 接口的方法以及遍历',
-            component: <Module11></Module11>,
-        },
-        {
-            title: 'List 接口的方法以及遍历',
-            component: <Module11></Module11>,
-        },
-        {
-            title: 'Set接口实现类的对比',
-            component: <Module12></Module12>,
-        },
-        {
-            title: 'Set的无序性与不可重复性的理解',
-            component: <Module13></Module13>,
-        },
-    ]
+    ];
 
     let items = turnItems(baseItems)
 
     return (<>
         <PageWrapper
-            title={'集合'}
+            title={'流程控制'}
         >
             <CollapseWrapper
                 items={items}
@@ -94,4 +75,4 @@ const Book01 = () => {
     </>)
 }
 
-export default Book01
+export default Book02
