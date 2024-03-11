@@ -28,56 +28,48 @@ const Book01 = () => {
             component: <Module01></Module01>,
         },
         {
-            title: '集合框架涉及到的 API',
+            title: 'Collection 接口中的常用方法',
             component: <Module02></Module02>,
         },
         {
-            title: 'Collection 接口中的常用方法',
+            title: '迭代器 Iterator',
             component: <Module03></Module03>,
         },
         {
-            title: '迭代器 Iterator',
+            title: '新特性 foreach 遍历',
             component: <Module04></Module04>,
         },
         {
-            title: '迭代器 Iterator',
+            title: 'List 接口常用实现类的对比',
             component: <Module05></Module05>,
         },
         {
-            title: '新特性 foreach 遍历',
+            title: 'ArrayList 的源码分析',
             component: <Module06></Module06>,
         },
         {
-            title: 'List 接口常用实现类的对比',
+            title: 'LinkedList 的源码分析',
             component: <Module07></Module07>,
         },
         {
-            title: 'ArrayList 的源码分析',
+            title: 'Vector 的源码分析',
             component: <Module08></Module08>,
         },
         {
-            title: 'LinkedList 的源码分析',
+            title: 'List 接口的方法以及遍历',
             component: <Module09></Module09>,
         },
         {
-            title: 'Vector 的源码分析',
+            title: 'List 接口的方法以及遍历',
             component: <Module10></Module10>,
         },
         {
-            title: 'List 接口的方法以及遍历',
-            component: <Module11></Module11>,
-        },
-        {
-            title: 'List 接口的方法以及遍历',
-            component: <Module11></Module11>,
-        },
-        {
             title: 'Set接口实现类的对比',
-            component: <Module12></Module12>,
+            component: <Module11></Module11>,
         },
         {
             title: 'Set的无序性与不可重复性的理解',
-            component: <Module13></Module13>,
+            component: <Module12></Module12>,
         },
     ]
 
