@@ -56,11 +56,11 @@ const Book01 = () => {
             component: <Module08></Module08>,
         },
         {
-            title: 'List 接口的方法以及遍历',
+            title: 'List 接口的常用方法',
             component: <Module09></Module09>,
         },
         {
-            title: 'List 接口的方法以及遍历',
+            title: 'List 接口的遍历及方法总结',
             component: <Module10></Module10>,
         },
         {

@@ -126,7 +126,7 @@ const Module = (props) => {
             <ComLine></ComLine>
 
             <ParagraphWrapper>
-                <Dot></Dot><Bold>总结：</Bold>
+                <Dot color="black"></Dot><Bold>总结：</Bold>
             </ParagraphWrapper>
             <ParagraphWrapper>
                 （1）在查询（get）、遍历（iterator）、修改（set）使用的比较多的情况下，用ArrayList
@@ -137,7 +137,10 @@ const Module = (props) => {
             <ParagraphWrapper>
                 （3）在需要线程安全而且对效率要求比较低的情况下，使用Vector，当然，实现ArrayList线程安全的方法也有很多，以后再说。
             </ParagraphWrapper>
-            
+
+            <ComSpace></ComSpace>
+            <ComSpace></ComSpace>
+            <ComSpace></ComSpace>
         </div>
     </>)
 }
