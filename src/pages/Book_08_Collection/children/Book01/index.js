@@ -18,9 +18,8 @@ import Module09 from "./Modules/Module09";
 import Module10 from "./Modules/Module10";
 import Module11 from "./Modules/Module11";
 import Module12 from "./Modules/Module12";
-import Module13 from "./Modules/Module13";
 
-const Book01 = () => {
+const Book01 = (props) => {
 
     const baseItems = [
         {
@@ -36,7 +35,7 @@ const Book01 = () => {
             component: <Module03></Module03>,
         },
         {
-            title: '新特性 foreach 遍历',
+            title: '新特性 foreach 遍历（增强for循环）',
             component: <Module04></Module04>,
         },
         {
@@ -80,6 +79,7 @@ const Book01 = () => {
             title={'集合'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

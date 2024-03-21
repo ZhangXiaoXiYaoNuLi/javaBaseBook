@@ -17,7 +17,7 @@ import Module08 from "./Modules/Module08";
 import Module09 from "./Modules/Module09";
 
 
-const Book01 = () => {
+const Book01 = (props) => {
 
     const baseItems = [
         {
@@ -65,6 +65,7 @@ const Book01 = () => {
             title={'日期相关'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

@@ -13,7 +13,7 @@ import Module04 from "./Modules/Module04";
 import Module05 from "./Modules/Module05";
 import Module06 from "./Modules/Module06";
 
-const Book06 = () => {
+const Book06 = (props) => {
 
     const baseItems = [
         {
@@ -49,6 +49,7 @@ const Book06 = () => {
             title={'Section-6'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

@@ -85,6 +85,7 @@ const Book02 = (props) => {
             title={'变量、数据类型'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

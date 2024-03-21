@@ -10,7 +10,7 @@ import Module01 from "./Modules/Module01";
 import Module02 from "./Modules/Module02";
 import Module03 from "./Modules/Module03";
 
-const Book01 = () => {
+const Book01 = (props) => {
 
     const baseItems = [
         {
@@ -34,6 +34,7 @@ const Book01 = () => {
             title={'IO流与网络编程'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

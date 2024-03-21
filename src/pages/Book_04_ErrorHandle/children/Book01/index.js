@@ -16,7 +16,7 @@ import Module07 from "./Modules/Module07";
 import Module08 from "./Modules/Module08";
 import Module09 from "./Modules/Module09";
 
-const Book01 = () => {
+const Book01 = (props) => {
 
     const baseItems = [
         {
@@ -64,6 +64,7 @@ const Book01 = () => {
             title={'异常处理'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

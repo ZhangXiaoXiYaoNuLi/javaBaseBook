@@ -13,6 +13,7 @@ import ComSpace from '@/components/ComSpace'
 import ImagesGroup from '@/components/ImagesGroup'
 // 代码展示组件，输入值为转化后的字符串数组
 import CodeShowWrapper from '@/components/CodeShowWrapper'
+import BottomFloatButtonGroup from '@/components/BottomFloatButtonGroup'
 // 卡片组件
 import CardWrapper from '@/components/CardWrapper'
 // 小标题
@@ -39,7 +40,7 @@ import img98 from '@/assets/images/img98.png'
 
 import img99 from '@/assets/images/img99.png'
 
-const Book03 = () => {
+const Book03 = (props) => {
 
     const baseItems = [
         {
@@ -151,6 +152,11 @@ const Book03 = () => {
                 </ParagraphWrapper>
             </Card>
         </PageWrapper>
+
+        {/* 抽取的底部右侧悬浮按钮组 */}
+        <BottomFloatButtonGroup
+            {...props}
+        ></BottomFloatButtonGroup>
     </>)
 }
 

@@ -8,7 +8,7 @@ import {turnItems} from '@/utils/utils.js'
 
 import Module01 from "./Modules/Module01";
 
-const Book04 = () => {
+const Book04 = (props) => {
 
     const baseItems = [
         {
@@ -24,6 +24,7 @@ const Book04 = () => {
             title={'数组中的常见异常'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

@@ -11,36 +11,21 @@ import Module02 from "./Modules/Module02";
 import Module03 from "./Modules/Module03";
 import SmallTitle from "@/components/SmallTitle";
 
-const Book02 = () => {
+import BottomFloatButtonGroup from '@/components/BottomFloatButtonGroup'
 
-    const baseItems = [
-        {
-            title: 'Module01',
-            component: <Module01></Module01>,
-        },
-        {
-            title: 'Module02',
-            component: <Module02></Module02>,
-        },
-        {
-            title: 'Module03',
-            component: <Module03></Module03>,
-        },
-    ];
-
-    let items = turnItems(baseItems)
-
+const Book02 = (props) => {
     return (<>
         <PageWrapper
             title={'常见算法'}
         >
-            {/* <CollapseWrapper
-                items={items}
-            ></CollapseWrapper> */}
-
             <SmallTitle>
                 暂时 略~
             </SmallTitle>
+
+            {/* 抽取的底部右侧悬浮按钮组 */}
+            <BottomFloatButtonGroup
+                {...props}
+            ></BottomFloatButtonGroup>
         </PageWrapper>
     </>)
 }

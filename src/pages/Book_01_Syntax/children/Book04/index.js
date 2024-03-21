@@ -60,6 +60,7 @@ const Book04 = (props) => {
             title={'流程控制'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

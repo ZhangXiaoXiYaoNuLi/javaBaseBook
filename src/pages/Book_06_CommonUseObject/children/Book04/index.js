@@ -11,7 +11,7 @@ import Module02 from "./Modules/Module02";
 import Module03 from "./Modules/Module03";
 import Module04 from "./Modules/Module04";
 
-const Book01 = () => {
+const Book01 = (props) => {
 
     const baseItems = [
         {
@@ -39,6 +39,7 @@ const Book01 = () => {
             title={'System、Math、BigInteger、BigDecimal'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

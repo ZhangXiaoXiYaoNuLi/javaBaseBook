@@ -17,7 +17,7 @@ import Module08 from "./Modules/Module08";
 import Module09 from "./Modules/Module09";
 import Module10 from "./Modules/Module10";
 
-const Book02 = () => {
+const Book02 = (props) => {
 
     const baseItems = [
         {
@@ -69,6 +69,7 @@ const Book02 = () => {
             title={'流程控制'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

@@ -33,6 +33,7 @@ const Book01 = (props) => {
             title={'关键字、保留字、标识符'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

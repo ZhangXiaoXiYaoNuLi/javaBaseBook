@@ -2,9 +2,18 @@
 import React, { useEffect, useState } from "react";
 
 import { Collapse, FloatButton } from 'antd'
-import { UpCircleOutlined, DownCircleOutlined } from '@ant-design/icons';
+import { UpCircleOutlined, DownCircleOutlined, PlusOutlined, ArrowRightOutlined, ArrowLeftOutlined } from '@ant-design/icons';
+
+import { routerData } from '../../utils/router'
+
+import { useResolvedPath, useRouteProps, useLocation, history } from 'umi';
 
 const CollapseWrapper = (props) => {
+
+    let location = useLocation();
+
+    console.log('location =>', location)
+    console.log('history =>', history)
 
     // 可控的展开 activeKey
     const [activeKey, setActiveKey] = useState([])
@@ -13,6 +22,35 @@ const CollapseWrapper = (props) => {
     const [expendButtonText, setExpendButtonText] = useState('1')
 
     const [firstFlag, setFirstFlag] = useState(false)
+    
+    // 找到当前路由上一个和下一个 path 的方法
+    const findNowPath = (flag) => {
+        let fillArr = []
+
+        const findRouteItem = (data) => {
+            if (data != null && data.length != null && !!data.length) {
+                data.forEach(item => {
+                    if (item.routes == null) {
+                        fillArr.push(item.path)
+                    } else if (item.routes != null && item.routes.length != null) {
+                        findRouteItem(item.routes)
+                    }
+                })
+            }
+        }
+
+        findRouteItem(routerData)
+
+        // console.log('fillArr =>', fillArr)
+
+        let index = fillArr.indexOf(location.pathname)
+
+        let nextPath = fillArr[index + 1]
+        let prevPath = fillArr[index - 1]
+        // console.log('下一路由 =>', nextPath)
+        // console.log('上一路由 =>', prevPath)
+        return flag === 'next' ? nextPath : prevPath
+    }
 
     // 全部展开方法
     const expendAll = () => {
@@ -52,6 +90,14 @@ const CollapseWrapper = (props) => {
         
     }, [props.items, firstFlag])
 
+    const next = () => {
+        history.push(findNowPath('next'))
+    }
+
+    const back = () => {
+        history.push(findNowPath('back'))
+    }
+
     return (<>
         <div
             style={{
@@ -79,13 +125,38 @@ const CollapseWrapper = (props) => {
                 opacity: 0.6,
             }}
         >
-            <FloatButton
-                type="primary"
-                onClick={() => {
-                    expendButtonText === '1' ? setActiveKey([]) : expendAll()
-                }}
-                icon={expendButtonText === '1' ? <UpCircleOutlined /> : <DownCircleOutlined />}
-            ></FloatButton>
+            
+
+            <FloatButton.Group
+                trigger="click"
+                // type="primary"
+                // style={{ right: 94 }}
+                icon={<PlusOutlined />}
+            >
+                <FloatButton
+                    type="primary"
+                    onClick={() => {
+                        // 下一小章
+                        next()
+                    }}
+                    icon={<ArrowRightOutlined />}
+                ></FloatButton>
+                <FloatButton
+                    type="primary"
+                    onClick={() => {
+                        // 上一小章
+                        back()
+                    }}
+                    icon={<ArrowLeftOutlined />}
+                ></FloatButton>
+                <FloatButton
+                    type="primary"
+                    onClick={() => {
+                        expendButtonText === '1' ? setActiveKey([]) : expendAll()
+                    }}
+                    icon={expendButtonText === '1' ? <UpCircleOutlined /> : <DownCircleOutlined />}
+                ></FloatButton>
+            </FloatButton.Group>
         </div>
     </>);
 }

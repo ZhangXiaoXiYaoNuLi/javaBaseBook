@@ -16,7 +16,7 @@ import Module07 from "./Modules/Module07";
 import Module08 from "./Modules/Module08";
 import Module09 from "./Modules/Module09";
 
-const Book06 = () => {
+const Book07 = (props) => {
 
     const baseItems = [
         {
@@ -61,13 +61,14 @@ const Book06 = () => {
 
     return (<>
         <PageWrapper
-            title={'Section-6'}
+            title={'Section-7'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>
     </>)
 }
 
-export default Book06
+export default Book07

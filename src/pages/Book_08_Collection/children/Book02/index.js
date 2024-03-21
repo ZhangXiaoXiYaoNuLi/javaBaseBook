@@ -14,7 +14,7 @@ import Module05 from "./Modules/Module05";
 import Module06 from "./Modules/Module06";
 import Module07 from "./Modules/Module07";
 
-const Book02 = () => {
+const Book02 = (props) => {
 
     const baseItems = [
         {
@@ -54,6 +54,7 @@ const Book02 = () => {
             title={'流程控制'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>

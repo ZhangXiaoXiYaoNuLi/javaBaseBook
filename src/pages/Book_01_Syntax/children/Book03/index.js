@@ -54,6 +54,7 @@ const Book03 = (props) => {
             title={'运算符'}
         >
             <CollapseWrapper
+                {...props}
                 items={items}
             ></CollapseWrapper>
         </PageWrapper>
