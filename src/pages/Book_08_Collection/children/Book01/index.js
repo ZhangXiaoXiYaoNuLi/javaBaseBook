@@ -76,7 +76,7 @@ const Book01 = (props) => {
 
     return (<>
         <PageWrapper
-            title={'集合'}
+            title={'集合-第一章'}
         >
             <CollapseWrapper
                 {...props}

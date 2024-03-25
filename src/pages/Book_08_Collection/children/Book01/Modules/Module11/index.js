@@ -46,17 +46,17 @@ const Module = (props) => {
                     dataSource={[
                         {
                             type: 'HashSet',
-                            sum: '作为 Set 接口的主要实现类，类似于 ArrayList 对于 list 的地位。可以存储 null',
+                            sum: <span>作为 <Blue>Set 接口的主要实现类</Blue>，类似于 ArrayList 对于 list 的地位。可以存储 null</span>,
                             threadSafe: '非线程安全',
                         },
                         {
                             type: 'LinkedHashSet',
-                            sum: '和HashSet比起来，顾名思义，就是先 HashSet 存储，然后再 链表Linked一下。这哥们其实是 HashSet 的子类，然后添加了“link”。这么做的目的，是为了让其“看起来”是有序的（其实还是无序的）。也就是实现了遍历的时候，可以按照元素添加的顺序遍历。',
+                            sum: <span>和HashSet比起来，顾名思义，就是先 HashSet 存储，然后再 链表Linked一下。这哥们其实是 HashSet 的子类，然后添加了“link”。这么做的目的，是为了让其<Blue>“看起来”是有序的（其实还是无序的）</Blue>。也就是实现了遍历的时候，可以按照元素添加的顺序遍历。</span>,
                             threadSafe: '非线程安全',
                         },
                         {
                             type: 'TreeSet',
-                            sum: '底层的存储结构是二叉树，准确地又叫红黑树。这使得我们存储的时候，必须存储同一个类new出来的实例对象。（没错。前面讲的3个list和2个set，都是可以存储不同类型的）。同一个类 new 出来的，就可以用实例的某个属性进行排序。之前在集合简介的时候讲到的 Comparable 和 Comparator，就可以用在这里排序。',
+                            sum: <span>底层的存储结构是二叉树，准确地又叫红黑树。<Blue>这使得我们存储的时候，必须存储同一个类new出来的实例对象。（没错。前面讲的3个list和2个set，都是可以存储不同类型的）。同一个类 new 出来的，就可以用实例的某个属性进行排序</Blue>。之前在集合简介的时候讲到的 Comparable 和 Comparator，就可以用在这里排序。</span>,
                             threadSafe: '非线程安全',
                         },
                     ]}

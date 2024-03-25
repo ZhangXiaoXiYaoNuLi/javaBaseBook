@@ -30,20 +30,12 @@ const Book02 = (props) => {
             component: <Module03></Module03>,
         },
         {
-            title: 'TreeSet的自然排序、定制排序',
-            component: <Module03></Module03>,
+            title: 'TreeSet的自然排序',
+            component: <Module04></Module04>,
         },
         {
-            title: 'LinkedHashSet的使用',
-            component: <Module03></Module03>,
-        },
-        {
-            title: 'LinkedHashSet的使用',
-            component: <Module03></Module03>,
-        },
-        {
-            title: 'LinkedHashSet的使用',
-            component: <Module03></Module03>,
+            title: 'TreeSet的定制排序',
+            component: <Module05></Module05>,
         },
     ];
 
@@ -51,7 +43,7 @@ const Book02 = (props) => {
 
     return (<>
         <PageWrapper
-            title={'流程控制'}
+            title={'集合-第二章'}
         >
             <CollapseWrapper
                 {...props}
