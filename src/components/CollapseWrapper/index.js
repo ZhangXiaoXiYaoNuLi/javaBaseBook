@@ -85,7 +85,8 @@ const CollapseWrapper = (props) => {
                 keys.push(item.key)
             })
 
-            setActiveKey(keys)
+            // 临时 去除手动自动展示
+            // setActiveKey(keys)
         }
         
     }, [props.items, firstFlag])

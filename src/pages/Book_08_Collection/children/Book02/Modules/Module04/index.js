@@ -24,6 +24,7 @@ import img586 from '@/assets/images/img586.png'
 import img587 from '@/assets/images/img587.png'
 import img588 from '@/assets/images/img588.png'
 import img589 from '@/assets/images/img589.png'
+import img613 from '@/assets/images/img613.png'
 
 const Module = (props) => {
 
@@ -65,7 +66,7 @@ const Module = (props) => {
             </ParagraphWrapper>
 
             <ImagesGroup
-                srcArr={[img584]}
+                srcArr={[img613]}
             ></ImagesGroup>
 
             <ParagraphWrapper>

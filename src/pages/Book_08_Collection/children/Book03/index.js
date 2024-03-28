@@ -35,6 +35,7 @@ const Book02 = (props) => {
         {
             title: 'HashMap 在 JDK7、8 中的源码分析',
             component: <Module04></Module04>,
+            hidden: true,
         },
         {
             title: 'LinkedHashMap 的底层实现',
@@ -59,6 +60,7 @@ const Book02 = (props) => {
         {
             title: 'java 数据结构简述',
             component: <Module10></Module10>,
+            hidden: true,
         },
     ];
 
