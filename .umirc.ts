@@ -13,5 +13,7 @@ export default defineConfig({
   },
   routes: routerData,
   npmClient: 'yarn',
+  // base: '/Java学习笔记/1、Java核心基础/java基础学习笔记/javaBaseBooks/dist',
+  // publicPath: '/Java学习笔记/1、Java核心基础/java基础学习笔记/javaBaseBooks/dist/',
 });
 
