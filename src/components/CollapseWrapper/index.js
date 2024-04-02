@@ -12,8 +12,8 @@ const CollapseWrapper = (props) => {
 
     let location = useLocation();
 
-    console.log('location =>', location)
-    console.log('history =>', history)
+    // console.log('location =>', location)
+    // console.log('history =>', history)
 
     // 可控的展开 activeKey
     const [activeKey, setActiveKey] = useState([])
