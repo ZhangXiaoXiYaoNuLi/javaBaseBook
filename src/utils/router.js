@@ -176,14 +176,31 @@ export const routerData = [
       ]
     },
     {
-      name: '9、泛型与File',
+      name: '9、泛型',
       path: '/genericity_and_file/book1',
       component: './Book_09_GenericityAndFile/children/Book01',
     },
     {
       name: 'A、IO流与网络编程',
-      path: '/io_and_web/book1',
-      component: './Book_10_IoAndWeb/children/Book01',
+      path: '/io_and_web',
+      // component: './Book_10_IoAndWeb/children/Book01',
+      routes: [
+        {
+          name: 'IO Section-1',
+          path: '/io_and_web/book1',
+          component: './Book_10_IoAndWeb/children/Book01',
+        },
+        {
+          name: 'IO Section-2',
+          path: '/io_and_web/book2',
+          component: './Book_10_IoAndWeb/children/Book02',
+        },
+        {
+          name: '网络编程',
+          path: '/io_and_web/book3',
+          component: './Book_10_IoAndWeb/children/Book03',
+        },
+      ]
     },
     {
       name: 'B、反射',

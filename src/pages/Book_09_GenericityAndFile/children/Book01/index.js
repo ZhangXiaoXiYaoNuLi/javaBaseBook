@@ -44,21 +44,13 @@ const Book01 = (props) => {
             title: '通配符的使用',
             component: <Module06></Module06>,
         },
-        {
-            title: 'File类的实例化',
-            component: <Module07></Module07>,
-        },
-        {
-            title: 'File类的常用方法',
-            component: <Module08></Module08>,
-        },
     ]
 
     let items = turnItems(baseItems)
 
     return (<>
         <PageWrapper
-            title={'泛型与File'}
+            title={'泛型'}
         >
             <CollapseWrapper
                 {...props}
