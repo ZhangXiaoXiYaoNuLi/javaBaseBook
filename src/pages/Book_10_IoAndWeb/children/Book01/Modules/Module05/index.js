@@ -2,7 +2,7 @@ import React, {useEffect, useState, useRef} from "react";
 
 import styles from './styles.less'
 import {
-    ParagraphWrapper,
+    ParagraphWrapper as P,
     ComSpace,
     ImagesGroup,
     CodeShowWrapper,
@@ -23,7 +23,9 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
-
+            <P>
+                
+            </P>
         </div>
     </>)
 }
