@@ -19,6 +19,7 @@ import {
 import img668 from '@/assets/images/img668.png'
 import img669 from '@/assets/images/img669.png'
 import img670 from '@/assets/images/img670.png'
+import img671 from '@/assets/images/img671.png'
 
 const Module = (props) => {
 
@@ -53,6 +54,11 @@ const Module = (props) => {
             </P>
             <P><Dot></Dot>read 方法无参执行的时候，获取的是取单个字符的编码值（int类型）。</P>
             <P><Dot></Dot><Bold>另外就是，这里我们到最后忘记调用 close 方法，关闭文件流了。</Bold></P>
+            <ComLine></ComLine>
+            <P><Dot></Dot>下面来个读取文本的标准写法：</P>
+            <ImagesGroup
+                srcArr={[img671]}
+            ></ImagesGroup>
         </div>
     </>)
 }
