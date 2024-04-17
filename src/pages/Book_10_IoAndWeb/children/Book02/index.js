@@ -37,6 +37,7 @@ const Book02 = () => {
         {
             title: '自定义类可序列化的其它要求',
             component: <Module05></Module05>,
+            hidden: true,
         },
         {
             title: 'RandomAccessFile 的读写和插入数据操作',
@@ -45,10 +46,12 @@ const Book02 = () => {
         {
             title: 'NIO介绍及NIO2中Path、Paths、Files的介绍',
             component: <Module07></Module07>,
+            hidden: true,
         },
         {
             title: '使用第三方jar包实现数据读写',
             component: <Module08></Module08>,
+            hidden: true,
         },
     ];
 

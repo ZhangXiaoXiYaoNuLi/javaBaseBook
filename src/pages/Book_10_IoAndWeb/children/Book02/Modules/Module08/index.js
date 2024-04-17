@@ -23,7 +23,7 @@ const Module = (props) => {
         <div
             className={styles.base_wrapper}
         >
-
+            
         </div>
     </>)
 }
