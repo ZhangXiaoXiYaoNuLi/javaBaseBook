@@ -21,6 +21,8 @@ import Bold from '@/components/Bold'
 
 import Tp from '@/components/Tp'
 
+import SingleRowItem from '@/components/SingleRowItem'
+
 export {
     ParagraphWrapper,
     ComSpace,
@@ -35,4 +37,5 @@ export {
     Green,
     Bold,
     Tp,
+    SingleRowItem,
 }

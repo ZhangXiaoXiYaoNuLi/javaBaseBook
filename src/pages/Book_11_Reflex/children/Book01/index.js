@@ -10,6 +10,9 @@ import Module01 from "./Modules/Module01";
 import Module02 from "./Modules/Module02";
 import Module03 from "./Modules/Module03";
 import Module04 from "./Modules/Module04";
+import Module05 from "./Modules/Module05";
+import Module06 from "./Modules/Module06";
+import Module07 from "./Modules/Module07";
 
 const Book01 = (props) => {
 
@@ -30,6 +33,18 @@ const Book01 = (props) => {
             title: 'Class 类的理解',
             component: <Module04></Module04>,
         },
+        {
+            title: '获取类实例的4种方法',
+            component: <Module05></Module05>
+        },
+        {
+            title: '理解类的加载过程 及 ClassLoader',
+            component: <Module06></Module06>
+        },
+        {
+            title: '通过反射，创建运行时类的实例对象',
+            component: <Module07></Module07>
+        }
     ]
 
     let items = turnItems(baseItems)
