@@ -14,7 +14,7 @@ const Book01 = (props) => {
 
     const baseItems = [
         {
-            title: '1',
+            title: 'Lambda 表达式',
             component: <Module01></Module01>,
         },
         {
